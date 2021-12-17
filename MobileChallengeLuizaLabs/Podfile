@@ -44,3 +44,19 @@ target 'Core' do
     tests_pods
   end
 end
+
+target 'CoreUI' do
+  use_frameworks!
+
+  project 'CoreUI/CoreUI.xcodeproj'
+
+  tools_pods
+
+  target 'CoreUITests' do
+    inherit! :search_paths
+
+    project 'CoreUI/CoreUI.xcodeproj'
+    
+    tests_pods
+  end
+end
