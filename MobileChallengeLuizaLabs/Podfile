@@ -1,0 +1,26 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '14.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+project 'MobileChallengeLuizaLabs'
+
+install! 'cocoapods', :warn_for_multiple_pod_sources => false, :deterministic_uuids => false
+
+inhibit_all_warnings!
+
+workspace 'MobileChallengeLuizaLabs.xcworkspace'
+
+def tests_pods
+  pod 'Nimble'
+  pod 'Nimble-Snapshots'
+  pod 'Quick'
+end
+
+target 'MobileChallengeLuizaLabs' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MobileChallengeLuizaLabs
+
+end
