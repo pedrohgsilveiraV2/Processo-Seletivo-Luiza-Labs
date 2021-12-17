@@ -1,0 +1,6 @@
+  output_dir: 'CoreUI/Resources/'
+  strings:
+    inputs: CoreUI/StringConstants/CoreUI.strings
+    outputs:
+      - templateName: structured-swift4
+        output: CoreUIStringConstants.swift
