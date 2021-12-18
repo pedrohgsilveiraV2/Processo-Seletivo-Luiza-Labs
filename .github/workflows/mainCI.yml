@@ -36,7 +36,6 @@ jobs:
       run: |
         set -o pipefail
         slather setup
-        bundle exec pod install
         xcodebuild build-for-testing \
         -project 'MobileChallengeLuizaLabs.xcworkspace' \
         -scheme 'MobileChallengeLuizaLabs' \
