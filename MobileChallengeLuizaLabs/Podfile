@@ -45,18 +45,18 @@ target 'Core' do
   end
 end
 
-target 'CoreUI' do
-  use_frameworks!
+# target 'CoreUI' do
+#   use_frameworks!
 
-  project 'CoreUI/CoreUI.xcodeproj'
+#   project 'CoreUI/CoreUI.xcodeproj'
 
-  tools_pods
+#   tools_pods
 
-  target 'CoreUITests' do
-    inherit! :search_paths
+#   target 'CoreUITests' do
+#     inherit! :search_paths
 
-    project 'CoreUI/CoreUI.xcodeproj'
+#     project 'CoreUI/CoreUI.xcodeproj'
     
-    tests_pods
-  end
-end
+#     tests_pods
+#   end
+# end

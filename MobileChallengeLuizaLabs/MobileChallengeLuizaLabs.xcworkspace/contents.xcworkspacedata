@@ -10,7 +10,4 @@
    <FileRef
       location = "group:Core/Core.xcodeproj">
    </FileRef>
-   <FileRef
-      location = "group:CoreUI/CoreUI.xcodeproj">
-   </FileRef>
 </Workspace>

@@ -15,15 +15,13 @@ open class Coordinator: CoordinatorProtocol {
         self.parentCoordinator = parentCoordinator
     }
 
-    public convenience init() {
-        self.init(parentCoordinator: nil)
+    public init() {
+        self.parentCoordinator = nil
     }
 
-    public func register<Event: CoordinatorEvent>(eventType: Event.Type, handler: @escaping (Event) -> Void) {
-        self.registeredEvents[eventType.key] = { event in
-            if let event = event as? Event {
-                handler(event)
-            }
+    public func register(eventType: CoordinatorEvent.Type, handler: @escaping (CoordinatorEvent) -> Void) {
+        registeredEvents[eventType.key] = { event in
+            handler(event)
         }
     }
 
@@ -32,7 +30,7 @@ open class Coordinator: CoordinatorProtocol {
     }
 
     open func handle(_ event: CoordinatorEvent) {
-        guard let handler = self.registeredEvents[event.key] else {
+        guard let handler = registeredEvents[event.key] else {
             handleWithParentCoordinator(event)
             return
         }

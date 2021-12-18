@@ -32,9 +32,9 @@
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BD8F98C5276D557F002BD084"
-            BuildableName = "CoreTests.xctest"
-            BlueprintName = "CoreTests"
+            BlueprintIdentifier = "BD8F98BC276D557F002BD084"
+            BuildableName = "Core.framework"
+            BlueprintName = "Core"
             ReferencedContainer = "container:Core/Core.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
