@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct NetworkError: RequestError {
+public struct NetworkError: RequestError {
 
     var statusCode: StatusCode
     var type: NetworkErrorType
@@ -16,11 +16,16 @@ struct NetworkError: RequestError {
         type.description
     }
 
-    var errorDescription: String? { description }
+    public var errorDescription: String? { description }
 
     init(statusCode: Int, type: NetworkErrorType) {
         self.statusCode = StatusCode(rawValue: statusCode)
         self.type = type
+    }
+
+    init(statusCode: Int) {
+        self.statusCode = StatusCode(rawValue: statusCode)
+        self.type = NetworkErrorType(rawValue: StatusCode(rawValue: statusCode))
     }
 }
 
@@ -30,7 +35,23 @@ enum NetworkErrorType {
     case notModified
     case validationFailed
     case serviceUnavailable
+    case failedToDecode
     case undefined
+
+    typealias RawValue = StatusCode
+
+    init(rawValue: RawValue) {
+        switch rawValue {
+        case .notModified:
+            self = .notModified
+        case .validationFailed:
+            self = .validationFailed
+        case .serviceUnavailable:
+            self = .serviceUnavailable
+        default:
+            self = .undefined
+        }
+    }
 }
 
 extension NetworkErrorType {
@@ -45,6 +66,8 @@ extension NetworkErrorType {
             return L10n.validationFailedDescription
         case .serviceUnavailable:
             return L10n.serviceUnavailableDescription
+        case .failedToDecode:
+            return ""
         case .undefined:
             return L10n.undefinedDescription
         }
