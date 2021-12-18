@@ -1,14 +1,14 @@
 //
-//  CoreUITests.swift
-//  CoreUITests
+//  MobileChallengeUITests.swift
+//  MobileChallengeUITests
 //
 //  Created by pedro.silveira on 17/12/21.
 //
 
 import XCTest
-@testable import CoreUI
+@testable import MobileChallengeUI
 
-class CoreUITests: XCTestCase {
+class MobileChallengeUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -1,0 +1,6 @@
+framework module Pods_MobileChallengeUI {
+  umbrella header "Pods-MobileChallengeUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

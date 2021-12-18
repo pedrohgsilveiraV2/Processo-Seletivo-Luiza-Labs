@@ -11,6 +11,9 @@
       location = "group:Core/Core.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:CoreUI/CoreUI.xcodeproj">
+      location = "group:/Users/pedro.silveira/Documents/Secrets/Processo-Seletivo-Luiza-Labs/MobileChallengeLuizaLabs/MobileChallengeUI/MobileChallengeUI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MobileChallengeUI/MobileChallengeUI.xcodeproj">
    </FileRef>
 </Workspace>

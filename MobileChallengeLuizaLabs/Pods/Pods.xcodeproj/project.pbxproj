@@ -173,14 +173,14 @@
 		46EB2E000019D0 /* Pods-CoreTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E000019C0 /* Pods-CoreTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46EB2E00001A20 /* Pods-CoreTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00001A10 /* Pods-CoreTests-dummy.m */; };
 		46EB2E00001AC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E000009F0 /* Foundation.framework */; };
-		46EB2E00001B30 /* Pods-CoreUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00001B20 /* Pods-CoreUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46EB2E00001B70 /* Pods-CoreUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00001B60 /* Pods-CoreUI-dummy.m */; };
+		46EB2E00001B30 /* Pods-MobileChallengeLuizaLabs-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00001B20 /* Pods-MobileChallengeLuizaLabs-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46EB2E00001B70 /* Pods-MobileChallengeLuizaLabs-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00001B60 /* Pods-MobileChallengeLuizaLabs-dummy.m */; };
 		46EB2E00001C10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E000009F0 /* Foundation.framework */; };
-		46EB2E00001C80 /* Pods-CoreUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00001C70 /* Pods-CoreUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46EB2E00001CD0 /* Pods-CoreUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00001CC0 /* Pods-CoreUITests-dummy.m */; };
-		46EB2E00001D70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E000009F0 /* Foundation.framework */; };
-		46EB2E00001DE0 /* Pods-MobileChallengeLuizaLabs-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00001DD0 /* Pods-MobileChallengeLuizaLabs-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46EB2E00001E20 /* Pods-MobileChallengeLuizaLabs-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00001E10 /* Pods-MobileChallengeLuizaLabs-dummy.m */; };
+		46EB2E00001C80 /* Pods-MobileChallengeUI-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00001C70 /* Pods-MobileChallengeUI-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46EB2E00001CC0 /* Pods-MobileChallengeUI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00001CB0 /* Pods-MobileChallengeUI-dummy.m */; };
+		46EB2E00001D60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46EB2E000009F0 /* Foundation.framework */; };
+		46EB2E00001DD0 /* Pods-MobileChallengeUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00001DC0 /* Pods-MobileChallengeUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46EB2E00001E20 /* Pods-MobileChallengeUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00001E10 /* Pods-MobileChallengeUITests-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,8 +237,8 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B9FD183728D186AB26B768491CDCD8ED;
-			remoteInfo = "Pods-CoreUI";
+			remoteGlobalIDString = 2D16E4CD1DB315183AE13CE3EBBB502F;
+			remoteInfo = "Pods-MobileChallengeUI";
 		};
 		46EB2E00001F30 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -286,7 +286,9 @@
 
 /* Begin PBXFileReference section */
 		0D631E9908483F9525A6B3F36F16CC61 /* Quick */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Quick; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18ABDF7F876D7680F0AA2E38DBC23129 /* Pods-MobileChallengeUI */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MobileChallengeUI"; path = Pods_MobileChallengeUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E2BCE51A3628925870F992D7495FCD4 /* Pods-CoreTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CoreTests"; path = Pods_CoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31976B452DA031573C683FA44AACBD12 /* Pods-MobileChallengeUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MobileChallengeUITests"; path = Pods_MobileChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46EB2E00000100 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		46EB2E00000110 /* AdapterProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdapterProtocols.swift; path = Sources/Nimble/Adapters/AdapterProtocols.swift; sourceTree = "<group>"; };
 		46EB2E00000120 /* AssertionDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertionDispatcher.swift; path = Sources/Nimble/Adapters/AssertionDispatcher.swift; sourceTree = "<group>"; };
@@ -468,38 +470,36 @@
 		46EB2E000019F0 /* Pods-CoreTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoreTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		46EB2E00001A00 /* Pods-CoreTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CoreTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		46EB2E00001A10 /* Pods-CoreTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CoreTests-dummy.m"; sourceTree = "<group>"; };
-		46EB2E00001AE0 /* Pods-CoreUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreUI.release.xcconfig"; sourceTree = "<group>"; };
-		46EB2E00001AF0 /* Pods-CoreUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreUI.debug.xcconfig"; sourceTree = "<group>"; };
-		46EB2E00001B00 /* Pods-CoreUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoreUI-Info.plist"; sourceTree = "<group>"; };
-		46EB2E00001B10 /* Pods-CoreUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CoreUI.modulemap"; sourceTree = "<group>"; };
-		46EB2E00001B20 /* Pods-CoreUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoreUI-umbrella.h"; sourceTree = "<group>"; };
-		46EB2E00001B40 /* Pods-CoreUI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoreUI-acknowledgements.plist"; sourceTree = "<group>"; };
-		46EB2E00001B50 /* Pods-CoreUI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CoreUI-acknowledgements.markdown"; sourceTree = "<group>"; };
-		46EB2E00001B60 /* Pods-CoreUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CoreUI-dummy.m"; sourceTree = "<group>"; };
-		46EB2E00001C30 /* Pods-CoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreUITests.release.xcconfig"; sourceTree = "<group>"; };
-		46EB2E00001C40 /* Pods-CoreUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CoreUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		46EB2E00001C50 /* Pods-CoreUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoreUITests-Info.plist"; sourceTree = "<group>"; };
-		46EB2E00001C60 /* Pods-CoreUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CoreUITests.modulemap"; sourceTree = "<group>"; };
-		46EB2E00001C70 /* Pods-CoreUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CoreUITests-umbrella.h"; sourceTree = "<group>"; };
-		46EB2E00001C90 /* Pods-CoreUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CoreUITests-frameworks.sh"; sourceTree = "<group>"; };
-		46EB2E00001CA0 /* Pods-CoreUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CoreUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		46EB2E00001CB0 /* Pods-CoreUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CoreUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		46EB2E00001CC0 /* Pods-CoreUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CoreUITests-dummy.m"; sourceTree = "<group>"; };
-		46EB2E00001D90 /* Pods-MobileChallengeLuizaLabs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MobileChallengeLuizaLabs.release.xcconfig"; sourceTree = "<group>"; };
-		46EB2E00001DA0 /* Pods-MobileChallengeLuizaLabs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MobileChallengeLuizaLabs.debug.xcconfig"; sourceTree = "<group>"; };
-		46EB2E00001DB0 /* Pods-MobileChallengeLuizaLabs-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MobileChallengeLuizaLabs-Info.plist"; sourceTree = "<group>"; };
-		46EB2E00001DC0 /* Pods-MobileChallengeLuizaLabs.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MobileChallengeLuizaLabs.modulemap"; sourceTree = "<group>"; };
-		46EB2E00001DD0 /* Pods-MobileChallengeLuizaLabs-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MobileChallengeLuizaLabs-umbrella.h"; sourceTree = "<group>"; };
-		46EB2E00001DF0 /* Pods-MobileChallengeLuizaLabs-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MobileChallengeLuizaLabs-acknowledgements.plist"; sourceTree = "<group>"; };
-		46EB2E00001E00 /* Pods-MobileChallengeLuizaLabs-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MobileChallengeLuizaLabs-acknowledgements.markdown"; sourceTree = "<group>"; };
-		46EB2E00001E10 /* Pods-MobileChallengeLuizaLabs-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MobileChallengeLuizaLabs-dummy.m"; sourceTree = "<group>"; };
+		46EB2E00001AE0 /* Pods-MobileChallengeLuizaLabs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MobileChallengeLuizaLabs.release.xcconfig"; sourceTree = "<group>"; };
+		46EB2E00001AF0 /* Pods-MobileChallengeLuizaLabs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MobileChallengeLuizaLabs.debug.xcconfig"; sourceTree = "<group>"; };
+		46EB2E00001B00 /* Pods-MobileChallengeLuizaLabs-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MobileChallengeLuizaLabs-Info.plist"; sourceTree = "<group>"; };
+		46EB2E00001B10 /* Pods-MobileChallengeLuizaLabs.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MobileChallengeLuizaLabs.modulemap"; sourceTree = "<group>"; };
+		46EB2E00001B20 /* Pods-MobileChallengeLuizaLabs-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MobileChallengeLuizaLabs-umbrella.h"; sourceTree = "<group>"; };
+		46EB2E00001B40 /* Pods-MobileChallengeLuizaLabs-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MobileChallengeLuizaLabs-acknowledgements.plist"; sourceTree = "<group>"; };
+		46EB2E00001B50 /* Pods-MobileChallengeLuizaLabs-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MobileChallengeLuizaLabs-acknowledgements.markdown"; sourceTree = "<group>"; };
+		46EB2E00001B60 /* Pods-MobileChallengeLuizaLabs-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MobileChallengeLuizaLabs-dummy.m"; sourceTree = "<group>"; };
+		46EB2E00001C30 /* Pods-MobileChallengeUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MobileChallengeUI.release.xcconfig"; sourceTree = "<group>"; };
+		46EB2E00001C40 /* Pods-MobileChallengeUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MobileChallengeUI.debug.xcconfig"; sourceTree = "<group>"; };
+		46EB2E00001C50 /* Pods-MobileChallengeUI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MobileChallengeUI-Info.plist"; sourceTree = "<group>"; };
+		46EB2E00001C60 /* Pods-MobileChallengeUI.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MobileChallengeUI.modulemap"; sourceTree = "<group>"; };
+		46EB2E00001C70 /* Pods-MobileChallengeUI-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MobileChallengeUI-umbrella.h"; sourceTree = "<group>"; };
+		46EB2E00001C90 /* Pods-MobileChallengeUI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MobileChallengeUI-acknowledgements.plist"; sourceTree = "<group>"; };
+		46EB2E00001CA0 /* Pods-MobileChallengeUI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MobileChallengeUI-acknowledgements.markdown"; sourceTree = "<group>"; };
+		46EB2E00001CB0 /* Pods-MobileChallengeUI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MobileChallengeUI-dummy.m"; sourceTree = "<group>"; };
+		46EB2E00001D80 /* Pods-MobileChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MobileChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		46EB2E00001D90 /* Pods-MobileChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MobileChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		46EB2E00001DA0 /* Pods-MobileChallengeUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MobileChallengeUITests-Info.plist"; sourceTree = "<group>"; };
+		46EB2E00001DB0 /* Pods-MobileChallengeUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MobileChallengeUITests.modulemap"; sourceTree = "<group>"; };
+		46EB2E00001DC0 /* Pods-MobileChallengeUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MobileChallengeUITests-umbrella.h"; sourceTree = "<group>"; };
+		46EB2E00001DE0 /* Pods-MobileChallengeUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MobileChallengeUITests-frameworks.sh"; sourceTree = "<group>"; };
+		46EB2E00001DF0 /* Pods-MobileChallengeUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MobileChallengeUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		46EB2E00001E00 /* Pods-MobileChallengeUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MobileChallengeUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		46EB2E00001E10 /* Pods-MobileChallengeUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MobileChallengeUITests-dummy.m"; sourceTree = "<group>"; };
 		5296A899114AD35114F1DF5C3460F83A /* Pods-Core */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Core"; path = Pods_Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C1B30CC4697E1933141720223103BC /* Nimble-Snapshots */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Nimble-Snapshots"; path = Nimble_Snapshots.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CD57D1442673DF550E70AE4723446A /* Pods-MobileChallengeLuizaLabs */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MobileChallengeLuizaLabs"; path = Pods_MobileChallengeLuizaLabs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC2B044A213C6F454A1EAF8C4FB57BE0 /* Pods-CoreUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CoreUITests"; path = Pods_CoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B91B00F8BE943329D633234BD67AE0AC /* iOSSnapshotTestCase */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = iOSSnapshotTestCase; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAE263041362D074978BB3B577DF0A05 /* Nimble */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Nimble; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8DF37C8A6E397A15EC202BD49E0601C /* Pods-CoreUI */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CoreUI"; path = Pods_CoreUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -573,11 +573,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E00001D50 /* Frameworks */ = {
+		46EB2E00001D40 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00001D70 /* Foundation.framework in Frameworks */,
+				46EB2E00001D60 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,9 +603,9 @@
 				52C1B30CC4697E1933141720223103BC /* Nimble-Snapshots */,
 				5296A899114AD35114F1DF5C3460F83A /* Pods-Core */,
 				2E2BCE51A3628925870F992D7495FCD4 /* Pods-CoreTests */,
-				F8DF37C8A6E397A15EC202BD49E0601C /* Pods-CoreUI */,
-				AC2B044A213C6F454A1EAF8C4FB57BE0 /* Pods-CoreUITests */,
 				A9CD57D1442673DF550E70AE4723446A /* Pods-MobileChallengeLuizaLabs */,
+				18ABDF7F876D7680F0AA2E38DBC23129 /* Pods-MobileChallengeUI */,
+				31976B452DA031573C683FA44AACBD12 /* Pods-MobileChallengeUITests */,
 				0D631E9908483F9525A6B3F36F16CC61 /* Quick */,
 			);
 			name = Products;
@@ -624,9 +624,9 @@
 			children = (
 				46EB2E00001820 /* Pods-Core */,
 				46EB2E00001970 /* Pods-CoreTests */,
-				46EB2E00001AD0 /* Pods-CoreUI */,
-				46EB2E00001C20 /* Pods-CoreUITests */,
-				46EB2E00001D80 /* Pods-MobileChallengeLuizaLabs */,
+				46EB2E00001AD0 /* Pods-MobileChallengeLuizaLabs */,
+				46EB2E00001C20 /* Pods-MobileChallengeUI */,
+				46EB2E00001D70 /* Pods-MobileChallengeUITests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -955,53 +955,53 @@
 			path = "Target Support Files/Pods-CoreTests";
 			sourceTree = "<group>";
 		};
-		46EB2E00001AD0 /* Pods-CoreUI */ = {
+		46EB2E00001AD0 /* Pods-MobileChallengeLuizaLabs */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00001B10 /* Pods-CoreUI.modulemap */,
-				46EB2E00001B50 /* Pods-CoreUI-acknowledgements.markdown */,
-				46EB2E00001B40 /* Pods-CoreUI-acknowledgements.plist */,
-				46EB2E00001B60 /* Pods-CoreUI-dummy.m */,
-				46EB2E00001B00 /* Pods-CoreUI-Info.plist */,
-				46EB2E00001B20 /* Pods-CoreUI-umbrella.h */,
-				46EB2E00001AF0 /* Pods-CoreUI.debug.xcconfig */,
-				46EB2E00001AE0 /* Pods-CoreUI.release.xcconfig */,
-			);
-			name = "Pods-CoreUI";
-			path = "Target Support Files/Pods-CoreUI";
-			sourceTree = "<group>";
-		};
-		46EB2E00001C20 /* Pods-CoreUITests */ = {
-			isa = PBXGroup;
-			children = (
-				46EB2E00001C60 /* Pods-CoreUITests.modulemap */,
-				46EB2E00001CB0 /* Pods-CoreUITests-acknowledgements.markdown */,
-				46EB2E00001CA0 /* Pods-CoreUITests-acknowledgements.plist */,
-				46EB2E00001CC0 /* Pods-CoreUITests-dummy.m */,
-				46EB2E00001C90 /* Pods-CoreUITests-frameworks.sh */,
-				46EB2E00001C50 /* Pods-CoreUITests-Info.plist */,
-				46EB2E00001C70 /* Pods-CoreUITests-umbrella.h */,
-				46EB2E00001C40 /* Pods-CoreUITests.debug.xcconfig */,
-				46EB2E00001C30 /* Pods-CoreUITests.release.xcconfig */,
-			);
-			name = "Pods-CoreUITests";
-			path = "Target Support Files/Pods-CoreUITests";
-			sourceTree = "<group>";
-		};
-		46EB2E00001D80 /* Pods-MobileChallengeLuizaLabs */ = {
-			isa = PBXGroup;
-			children = (
-				46EB2E00001DC0 /* Pods-MobileChallengeLuizaLabs.modulemap */,
-				46EB2E00001E00 /* Pods-MobileChallengeLuizaLabs-acknowledgements.markdown */,
-				46EB2E00001DF0 /* Pods-MobileChallengeLuizaLabs-acknowledgements.plist */,
-				46EB2E00001E10 /* Pods-MobileChallengeLuizaLabs-dummy.m */,
-				46EB2E00001DB0 /* Pods-MobileChallengeLuizaLabs-Info.plist */,
-				46EB2E00001DD0 /* Pods-MobileChallengeLuizaLabs-umbrella.h */,
-				46EB2E00001DA0 /* Pods-MobileChallengeLuizaLabs.debug.xcconfig */,
-				46EB2E00001D90 /* Pods-MobileChallengeLuizaLabs.release.xcconfig */,
+				46EB2E00001B10 /* Pods-MobileChallengeLuizaLabs.modulemap */,
+				46EB2E00001B50 /* Pods-MobileChallengeLuizaLabs-acknowledgements.markdown */,
+				46EB2E00001B40 /* Pods-MobileChallengeLuizaLabs-acknowledgements.plist */,
+				46EB2E00001B60 /* Pods-MobileChallengeLuizaLabs-dummy.m */,
+				46EB2E00001B00 /* Pods-MobileChallengeLuizaLabs-Info.plist */,
+				46EB2E00001B20 /* Pods-MobileChallengeLuizaLabs-umbrella.h */,
+				46EB2E00001AF0 /* Pods-MobileChallengeLuizaLabs.debug.xcconfig */,
+				46EB2E00001AE0 /* Pods-MobileChallengeLuizaLabs.release.xcconfig */,
 			);
 			name = "Pods-MobileChallengeLuizaLabs";
 			path = "Target Support Files/Pods-MobileChallengeLuizaLabs";
+			sourceTree = "<group>";
+		};
+		46EB2E00001C20 /* Pods-MobileChallengeUI */ = {
+			isa = PBXGroup;
+			children = (
+				46EB2E00001C60 /* Pods-MobileChallengeUI.modulemap */,
+				46EB2E00001CA0 /* Pods-MobileChallengeUI-acknowledgements.markdown */,
+				46EB2E00001C90 /* Pods-MobileChallengeUI-acknowledgements.plist */,
+				46EB2E00001CB0 /* Pods-MobileChallengeUI-dummy.m */,
+				46EB2E00001C50 /* Pods-MobileChallengeUI-Info.plist */,
+				46EB2E00001C70 /* Pods-MobileChallengeUI-umbrella.h */,
+				46EB2E00001C40 /* Pods-MobileChallengeUI.debug.xcconfig */,
+				46EB2E00001C30 /* Pods-MobileChallengeUI.release.xcconfig */,
+			);
+			name = "Pods-MobileChallengeUI";
+			path = "Target Support Files/Pods-MobileChallengeUI";
+			sourceTree = "<group>";
+		};
+		46EB2E00001D70 /* Pods-MobileChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				46EB2E00001DB0 /* Pods-MobileChallengeUITests.modulemap */,
+				46EB2E00001E00 /* Pods-MobileChallengeUITests-acknowledgements.markdown */,
+				46EB2E00001DF0 /* Pods-MobileChallengeUITests-acknowledgements.plist */,
+				46EB2E00001E10 /* Pods-MobileChallengeUITests-dummy.m */,
+				46EB2E00001DE0 /* Pods-MobileChallengeUITests-frameworks.sh */,
+				46EB2E00001DA0 /* Pods-MobileChallengeUITests-Info.plist */,
+				46EB2E00001DC0 /* Pods-MobileChallengeUITests-umbrella.h */,
+				46EB2E00001D90 /* Pods-MobileChallengeUITests.debug.xcconfig */,
+				46EB2E00001D80 /* Pods-MobileChallengeUITests.release.xcconfig */,
+			);
+			name = "Pods-MobileChallengeUITests";
+			path = "Target Support Files/Pods-MobileChallengeUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1081,7 +1081,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00001B30 /* Pods-CoreUI-umbrella.h in Headers */,
+				46EB2E00001B30 /* Pods-MobileChallengeLuizaLabs-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1089,21 +1089,40 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00001C80 /* Pods-CoreUITests-umbrella.h in Headers */,
+				46EB2E00001C80 /* Pods-MobileChallengeUI-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E00001D30 /* Headers */ = {
+		46EB2E00001D20 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00001DE0 /* Pods-MobileChallengeLuizaLabs-umbrella.h in Headers */,
+				46EB2E00001DD0 /* Pods-MobileChallengeUITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2D16E4CD1DB315183AE13CE3EBBB502F /* Pods-MobileChallengeUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46EB2E00001B90 /* Build configuration list for PBXNativeTarget "Pods-MobileChallengeUI" */;
+			buildPhases = (
+				46EB2E00001BD0 /* Headers */,
+				46EB2E00001BE0 /* Sources */,
+				46EB2E00001BF0 /* Frameworks */,
+				46EB2E00001C00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46EB2E00001F00 /* PBXTargetDependency */,
+			);
+			name = "Pods-MobileChallengeUI";
+			productName = Pods_MobileChallengeUI;
+			productReference = 18ABDF7F876D7680F0AA2E38DBC23129 /* Pods-MobileChallengeUI */;
+			productType = "com.apple.product-type.framework";
+		};
 		6F13695E06195A78EA8A95F8C7ED0D2F /* Nimble */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46EB2E00000960 /* Build configuration list for PBXNativeTarget "Nimble" */;
@@ -1122,37 +1141,14 @@
 			productReference = BAE263041362D074978BB3B577DF0A05 /* Nimble */;
 			productType = "com.apple.product-type.framework";
 		};
-		9326768C5004BCACAB45CBFC9B886A49 /* Pods-CoreUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 46EB2E00001B90 /* Build configuration list for PBXNativeTarget "Pods-CoreUITests" */;
-			buildPhases = (
-				46EB2E00001BD0 /* Headers */,
-				46EB2E00001BE0 /* Sources */,
-				46EB2E00001BF0 /* Frameworks */,
-				46EB2E00001C00 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				46EB2E00001F40 /* PBXTargetDependency */,
-				46EB2E00001F60 /* PBXTargetDependency */,
-				46EB2E00001F20 /* PBXTargetDependency */,
-				46EB2E00001F80 /* PBXTargetDependency */,
-				46EB2E00001FA0 /* PBXTargetDependency */,
-			);
-			name = "Pods-CoreUITests";
-			productName = Pods_CoreUITests;
-			productReference = AC2B044A213C6F454A1EAF8C4FB57BE0 /* Pods-CoreUITests */;
-			productType = "com.apple.product-type.framework";
-		};
 		9610B81F9310273F2731B4EE2B49A079 /* Pods-MobileChallengeLuizaLabs */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46EB2E00001CF0 /* Build configuration list for PBXNativeTarget "Pods-MobileChallengeLuizaLabs" */;
+			buildConfigurationList = 46EB2E00001A40 /* Build configuration list for PBXNativeTarget "Pods-MobileChallengeLuizaLabs" */;
 			buildPhases = (
-				46EB2E00001D30 /* Headers */,
-				46EB2E00001D40 /* Sources */,
-				46EB2E00001D50 /* Frameworks */,
-				46EB2E00001D60 /* Resources */,
+				46EB2E00001A80 /* Headers */,
+				46EB2E00001A90 /* Sources */,
+				46EB2E00001AA0 /* Frameworks */,
+				46EB2E00001AB0 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -1180,25 +1176,6 @@
 			name = "Pods-Core";
 			productName = Pods_Core;
 			productReference = 5296A899114AD35114F1DF5C3460F83A /* Pods-Core */;
-			productType = "com.apple.product-type.framework";
-		};
-		B9FD183728D186AB26B768491CDCD8ED /* Pods-CoreUI */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 46EB2E00001A40 /* Build configuration list for PBXNativeTarget "Pods-CoreUI" */;
-			buildPhases = (
-				46EB2E00001A80 /* Headers */,
-				46EB2E00001A90 /* Sources */,
-				46EB2E00001AA0 /* Frameworks */,
-				46EB2E00001AB0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				46EB2E00001F00 /* PBXTargetDependency */,
-			);
-			name = "Pods-CoreUI";
-			productName = Pods_CoreUI;
-			productReference = F8DF37C8A6E397A15EC202BD49E0601C /* Pods-CoreUI */;
 			productType = "com.apple.product-type.framework";
 		};
 		C393038B0BEF088C1B93E6528005862D /* iOSSnapshotTestCase */ = {
@@ -1280,6 +1257,29 @@
 			productReference = 2E2BCE51A3628925870F992D7495FCD4 /* Pods-CoreTests */;
 			productType = "com.apple.product-type.framework";
 		};
+		FFF6CDDD43AA81EE447A2D23E0CA4DFA /* Pods-MobileChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46EB2E00001CE0 /* Build configuration list for PBXNativeTarget "Pods-MobileChallengeUITests" */;
+			buildPhases = (
+				46EB2E00001D20 /* Headers */,
+				46EB2E00001D30 /* Sources */,
+				46EB2E00001D40 /* Frameworks */,
+				46EB2E00001D50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46EB2E00001F40 /* PBXTargetDependency */,
+				46EB2E00001F60 /* PBXTargetDependency */,
+				46EB2E00001F20 /* PBXTargetDependency */,
+				46EB2E00001F80 /* PBXTargetDependency */,
+				46EB2E00001FA0 /* PBXTargetDependency */,
+			);
+			name = "Pods-MobileChallengeUITests";
+			productName = Pods_MobileChallengeUITests;
+			productReference = 31976B452DA031573C683FA44AACBD12 /* Pods-MobileChallengeUITests */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1307,9 +1307,9 @@
 				EE19095A8C98E0BC5774005673495238 /* Nimble-Snapshots */,
 				A8D5EF097DB70BA987754AF4963AE0F7 /* Pods-Core */,
 				F70EEF008E3770231FC86FB72D380B52 /* Pods-CoreTests */,
-				B9FD183728D186AB26B768491CDCD8ED /* Pods-CoreUI */,
-				9326768C5004BCACAB45CBFC9B886A49 /* Pods-CoreUITests */,
 				9610B81F9310273F2731B4EE2B49A079 /* Pods-MobileChallengeLuizaLabs */,
+				2D16E4CD1DB315183AE13CE3EBBB502F /* Pods-MobileChallengeUI */,
+				FFF6CDDD43AA81EE447A2D23E0CA4DFA /* Pods-MobileChallengeUITests */,
 				C82891EAB7293DBEE916B21F57E8474D /* Quick */,
 				1E798429DCFA7906F6625CCFC1088744 /* SwiftGen */,
 			);
@@ -1373,7 +1373,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E00001D60 /* Resources */ = {
+		46EB2E00001D50 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1542,7 +1542,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00001B70 /* Pods-CoreUI-dummy.m in Sources */,
+				46EB2E00001B70 /* Pods-MobileChallengeLuizaLabs-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1550,15 +1550,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00001CD0 /* Pods-CoreUITests-dummy.m in Sources */,
+				46EB2E00001CC0 /* Pods-MobileChallengeUI-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E00001D40 /* Sources */ = {
+		46EB2E00001D30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E00001E20 /* Pods-MobileChallengeLuizaLabs-dummy.m in Sources */,
+				46EB2E00001E20 /* Pods-MobileChallengeUITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1609,8 +1609,8 @@
 		};
 		46EB2E00001F20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-CoreUI";
-			target = B9FD183728D186AB26B768491CDCD8ED /* Pods-CoreUI */;
+			name = "Pods-MobileChallengeUI";
+			target = 2D16E4CD1DB315183AE13CE3EBBB502F /* Pods-MobileChallengeUI */;
 			targetProxy = 46EB2E00001F10 /* PBXContainerItemProxy */;
 		};
 		46EB2E00001F40 /* PBXTargetDependency */ = {
@@ -2241,7 +2241,7 @@
 		};
 		46EB2E00001A50 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00001AE0 /* Pods-CoreUI.release.xcconfig */;
+			baseConfigurationReference = 46EB2E00001AE0 /* Pods-MobileChallengeLuizaLabs.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -2253,7 +2253,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CoreUI/Pods-CoreUI-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MobileChallengeLuizaLabs/Pods-MobileChallengeLuizaLabs-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2262,7 +2262,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CoreUI/Pods-CoreUI.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-MobileChallengeLuizaLabs/Pods-MobileChallengeLuizaLabs.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -2279,7 +2279,7 @@
 		};
 		46EB2E00001A60 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00001AF0 /* Pods-CoreUI.debug.xcconfig */;
+			baseConfigurationReference = 46EB2E00001AF0 /* Pods-MobileChallengeLuizaLabs.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -2291,7 +2291,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CoreUI/Pods-CoreUI-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MobileChallengeLuizaLabs/Pods-MobileChallengeLuizaLabs-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2300,7 +2300,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CoreUI/Pods-CoreUI.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-MobileChallengeLuizaLabs/Pods-MobileChallengeLuizaLabs.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -2316,7 +2316,7 @@
 		};
 		46EB2E00001BA0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00001C30 /* Pods-CoreUITests.release.xcconfig */;
+			baseConfigurationReference = 46EB2E00001C30 /* Pods-MobileChallengeUI.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -2328,7 +2328,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CoreUITests/Pods-CoreUITests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MobileChallengeUI/Pods-MobileChallengeUI-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2337,7 +2337,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CoreUITests/Pods-CoreUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-MobileChallengeUI/Pods-MobileChallengeUI.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -2354,7 +2354,7 @@
 		};
 		46EB2E00001BB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00001C40 /* Pods-CoreUITests.debug.xcconfig */;
+			baseConfigurationReference = 46EB2E00001C40 /* Pods-MobileChallengeUI.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -2366,7 +2366,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-CoreUITests/Pods-CoreUITests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MobileChallengeUI/Pods-MobileChallengeUI-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2375,7 +2375,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-CoreUITests/Pods-CoreUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-MobileChallengeUI/Pods-MobileChallengeUI.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -2389,9 +2389,9 @@
 			};
 			name = Debug;
 		};
-		46EB2E00001D00 /* Release */ = {
+		46EB2E00001CF0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00001D90 /* Pods-MobileChallengeLuizaLabs.release.xcconfig */;
+			baseConfigurationReference = 46EB2E00001D80 /* Pods-MobileChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -2403,7 +2403,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MobileChallengeLuizaLabs/Pods-MobileChallengeLuizaLabs-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MobileChallengeUITests/Pods-MobileChallengeUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2412,7 +2412,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MobileChallengeLuizaLabs/Pods-MobileChallengeLuizaLabs.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-MobileChallengeUITests/Pods-MobileChallengeUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -2427,9 +2427,9 @@
 			};
 			name = Release;
 		};
-		46EB2E00001D10 /* Debug */ = {
+		46EB2E00001D00 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E00001DA0 /* Pods-MobileChallengeLuizaLabs.debug.xcconfig */;
+			baseConfigurationReference = 46EB2E00001D90 /* Pods-MobileChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -2441,7 +2441,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MobileChallengeLuizaLabs/Pods-MobileChallengeLuizaLabs-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MobileChallengeUITests/Pods-MobileChallengeUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -2450,7 +2450,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MobileChallengeLuizaLabs/Pods-MobileChallengeLuizaLabs.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-MobileChallengeUITests/Pods-MobileChallengeUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -2539,7 +2539,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46EB2E00001A40 /* Build configuration list for PBXNativeTarget "Pods-CoreUI" */ = {
+		46EB2E00001A40 /* Build configuration list for PBXNativeTarget "Pods-MobileChallengeLuizaLabs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				46EB2E00001A60 /* Debug */,
@@ -2548,7 +2548,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46EB2E00001B90 /* Build configuration list for PBXNativeTarget "Pods-CoreUITests" */ = {
+		46EB2E00001B90 /* Build configuration list for PBXNativeTarget "Pods-MobileChallengeUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				46EB2E00001BB0 /* Debug */,
@@ -2557,11 +2557,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46EB2E00001CF0 /* Build configuration list for PBXNativeTarget "Pods-MobileChallengeLuizaLabs" */ = {
+		46EB2E00001CE0 /* Build configuration list for PBXNativeTarget "Pods-MobileChallengeUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46EB2E00001D10 /* Debug */,
-				46EB2E00001D00 /* Release */,
+				46EB2E00001D00 /* Debug */,
+				46EB2E00001CF0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

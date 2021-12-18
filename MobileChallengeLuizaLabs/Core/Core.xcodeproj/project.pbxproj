@@ -10,10 +10,16 @@
 		273AFE5BC8E05581567D3E26 /* Pods_Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0156E4683619D126B2E60E0E /* Pods_Core.framework */; };
 		95BB120BBF39DB8895052789 /* Pods_CoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB9510DA54F74927096FBE7B /* Pods_CoreTests.framework */; };
 		BD8F98C7276D557F002BD084 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8F98BD276D557F002BD084 /* Core.framework */; };
-		BD8F98CC276D557F002BD084 /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F98CB276D557F002BD084 /* CoreTests.swift */; };
 		BD8F98CE276D557F002BD084 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = BD8F98C0276D557F002BD084 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD8F98EA276D57FA002BD084 /* Core.strings in Resources */ = {isa = PBXBuildFile; fileRef = BD8F98E9276D57FA002BD084 /* Core.strings */; };
 		BD8F98F0276D5815002BD084 /* CoreStringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F98EF276D5815002BD084 /* CoreStringConstants.swift */; };
+		BD8F994D276D6EFE002BD084 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F994C276D6EFE002BD084 /* CoordinatorProtocol.swift */; };
+		BD8F9954276D6FEC002BD084 /* CoordinatorEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9953276D6FEC002BD084 /* CoordinatorEvent.swift */; };
+		BD8F995A276D719A002BD084 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9959276D719A002BD084 /* Coordinator.swift */; };
+		BD8F9963276D78CB002BD084 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9962276D78CB002BD084 /* CoordinatorTests.swift */; };
+		BD8F999C276D7CA0002BD084 /* DummyCoordinatorEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F999B276D7CA0002BD084 /* DummyCoordinatorEvent.swift */; };
+		BD8F99A3276D7D1D002BD084 /* CoordinatorHandlerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F99A2276D7D1D002BD084 /* CoordinatorHandlerSpy.swift */; };
+		BD8F99A9276D7EF3002BD084 /* ParentCoordinatorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F99A8276D7EF3002BD084 /* ParentCoordinatorSpy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +40,16 @@
 		BD8F98C0276D557F002BD084 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		BD8F98C1276D557F002BD084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD8F98C6276D557F002BD084 /* CoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD8F98CB276D557F002BD084 /* CoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTests.swift; sourceTree = "<group>"; };
 		BD8F98CD276D557F002BD084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD8F98E9276D57FA002BD084 /* Core.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Core.strings; sourceTree = "<group>"; };
 		BD8F98EF276D5815002BD084 /* CoreStringConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreStringConstants.swift; sourceTree = "<group>"; };
+		BD8F994C276D6EFE002BD084 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
+		BD8F9953276D6FEC002BD084 /* CoordinatorEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorEvent.swift; sourceTree = "<group>"; };
+		BD8F9959276D719A002BD084 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		BD8F9962276D78CB002BD084 /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
+		BD8F999B276D7CA0002BD084 /* DummyCoordinatorEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyCoordinatorEvent.swift; sourceTree = "<group>"; };
+		BD8F99A2276D7D1D002BD084 /* CoordinatorHandlerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorHandlerSpy.swift; sourceTree = "<group>"; };
+		BD8F99A8276D7EF3002BD084 /* ParentCoordinatorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentCoordinatorSpy.swift; sourceTree = "<group>"; };
 		DB9510DA54F74927096FBE7B /* Pods_CoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9F9480346F1A1607818115 /* Pods-Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core.release.xcconfig"; path = "Target Support Files/Pods-Core/Pods-Core.release.xcconfig"; sourceTree = "<group>"; };
 		FFA0CEA5BBF9A1F37417ACD3 /* Pods-CoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreTests.debug.xcconfig"; path = "Target Support Files/Pods-CoreTests/Pods-CoreTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +111,7 @@
 		BD8F98BF276D557F002BD084 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				BD8F994A276D6EE6002BD084 /* Coordinator */,
 				BD8F98E7276D57D4002BD084 /* Resources */,
 				BD8F98E8276D57E6002BD084 /* StringConstants */,
 				BD8F98C0276D557F002BD084 /* Core.h */,
@@ -110,7 +123,7 @@
 		BD8F98CA276D557F002BD084 /* CoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				BD8F98CB276D557F002BD084 /* CoreTests.swift */,
+				BD8F9961276D78B9002BD084 /* Coordinator */,
 				BD8F98CD276D557F002BD084 /* Info.plist */,
 			);
 			path = CoreTests;
@@ -130,6 +143,59 @@
 				BD8F98E9276D57FA002BD084 /* Core.strings */,
 			);
 			path = StringConstants;
+			sourceTree = "<group>";
+		};
+		BD8F994A276D6EE6002BD084 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F994B276D6EEE002BD084 /* Abstraction */,
+				BD8F9952276D6F56002BD084 /* Event */,
+				BD8F9959276D719A002BD084 /* Coordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		BD8F994B276D6EEE002BD084 /* Abstraction */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F994C276D6EFE002BD084 /* CoordinatorProtocol.swift */,
+			);
+			path = Abstraction;
+			sourceTree = "<group>";
+		};
+		BD8F9952276D6F56002BD084 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F9953276D6FEC002BD084 /* CoordinatorEvent.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		BD8F9961276D78B9002BD084 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F999A276D7C8A002BD084 /* Dummy */,
+				BD8F99A1276D7D07002BD084 /* Spy */,
+				BD8F9962276D78CB002BD084 /* CoordinatorTests.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		BD8F999A276D7C8A002BD084 /* Dummy */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F999B276D7CA0002BD084 /* DummyCoordinatorEvent.swift */,
+			);
+			path = Dummy;
+			sourceTree = "<group>";
+		};
+		BD8F99A1276D7D07002BD084 /* Spy */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F99A2276D7D1D002BD084 /* CoordinatorHandlerSpy.swift */,
+				BD8F99A8276D7EF3002BD084 /* ParentCoordinatorSpy.swift */,
+			);
+			path = Spy;
 			sourceTree = "<group>";
 		};
 		E1681337362617AC098797E3 /* Frameworks */ = {
@@ -210,6 +276,7 @@
 					};
 					BD8F98C5276D557F002BD084 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -337,7 +404,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD8F994D276D6EFE002BD084 /* CoordinatorProtocol.swift in Sources */,
 				BD8F98F0276D5815002BD084 /* CoreStringConstants.swift in Sources */,
+				BD8F9954276D6FEC002BD084 /* CoordinatorEvent.swift in Sources */,
+				BD8F995A276D719A002BD084 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +415,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD8F98CC276D557F002BD084 /* CoreTests.swift in Sources */,
+				BD8F99A3276D7D1D002BD084 /* CoordinatorHandlerSpy.swift in Sources */,
+				BD8F999C276D7CA0002BD084 /* DummyCoordinatorEvent.swift in Sources */,
+				BD8F9963276D78CB002BD084 /* CoordinatorTests.swift in Sources */,
+				BD8F99A9276D7EF3002BD084 /* ParentCoordinatorSpy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +617,7 @@
 			baseConfigurationReference = FFA0CEA5BBF9A1F37417ACD3 /* Pods-CoreTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -553,6 +627,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = pedrohgsilveira.CoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -563,6 +638,7 @@
 			baseConfigurationReference = 65F78F09886F368CEE3BC785 /* Pods-CoreTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
