@@ -8,8 +8,8 @@
 public protocol CoordinatorProtocol: AnyObject {
     var parentCoordinator: CoordinatorProtocol? { get }
 
-    func handle(event: CoordinatorEvent)
-    func start(_ completion: @escaping () -> Void)
+    func handle(_ event: CoordinatorEvent)
+    func start(_ completion: (() -> Void)?)
 }
 
 public extension CoordinatorProtocol {

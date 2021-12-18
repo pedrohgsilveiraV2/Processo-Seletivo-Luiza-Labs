@@ -5,19 +5,22 @@
 //  Created by pedro.silveira on 17/12/21.
 //
 
-public final class CoordinatorEventType: Hashable {
-    private let wrapped: CoordinatorEvent.Type
+public struct CoordinatorEventType: Hashable {
 
-    public init(_ type: CoordinatorEvent.Type) {
-        self.wrapped = type
+    typealias CoordinatorType = CoordinatorEvent.Type
+
+    private let wrappedValue: CoordinatorType
+
+    init(_ type: CoordinatorType) {
+        wrappedValue = type
     }
 
     public func hash(into hasher: inout Hasher) {
-        hasher.combine(ObjectIdentifier(wrapped).hashValue)
+        hasher.combine(ObjectIdentifier(wrappedValue).hashValue)
     }
 
     public static func == (lhs: CoordinatorEventType, rhs: CoordinatorEventType) -> Bool {
-        return lhs.wrapped == rhs.wrapped
+        return lhs.wrappedValue == rhs.wrappedValue
     }
 }
 
