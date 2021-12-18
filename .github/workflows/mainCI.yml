@@ -37,7 +37,7 @@ jobs:
         set -o pipefail
         slather setup
         xcodebuild build-for-testing \
-        -project 'MobileChallengeLuizaLabs.xcworkspace' \
+        -project 'MobileChallengeLuizaLabs.xcodeproj' \
         -scheme 'MobileChallengeLuizaLabs' \
         -destination 'platform=iOS Simulator,name=iPhone 8' \
         -derivedDataPath build \
@@ -76,7 +76,7 @@ jobs:
       run: |
         set -o pipefail
         xcodebuild test-without-building \
-        -project 'MobileChallengeLuizaLabs.xcworkspace' \
+        -project 'MobileChallengeLuizaLabs.xcodeproj' \
         -scheme 'MobileChallengeLuizaLabs' \
         -destination 'platform=iOS Simulator,name=iPhone 8' \
         -derivedDataPath build \
@@ -84,7 +84,7 @@ jobs:
         | xcpretty
     
     - name: Coverage report
-      run: slather coverage -x --binary-basename 'Bootcamp-Magic'
+      run: slather coverage -x --binary-basename 'MobileChallengeLuizaLabs'
       
     - name: Post coverage
       uses: codecov/codecov-action@v1
