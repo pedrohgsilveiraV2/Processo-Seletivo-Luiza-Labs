@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol HTTPBody {
+public protocol HTTPBody {
     func getData() throws -> Data
 }

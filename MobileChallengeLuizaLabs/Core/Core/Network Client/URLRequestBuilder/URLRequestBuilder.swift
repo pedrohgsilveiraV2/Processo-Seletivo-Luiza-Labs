@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct URLRequestBuilder {
+public struct URLRequestBuilder {
 
     private let request: HTTPRequest
 
@@ -35,7 +35,7 @@ struct URLRequestBuilder {
         return request
     }
 
-    func createRequest() -> NSMutableURLRequest? {
+    public func createRequest() -> NSMutableURLRequest? {
         var urlComponents = request.urlComponents
 
         if let queryParameters = queryParameters {
@@ -59,7 +59,7 @@ struct URLRequestBuilder {
         return urlRequest
     }
 
-    init(from request: HTTPRequest) {
+    public init(from request: HTTPRequest) {
         self.request = request
     }
 }

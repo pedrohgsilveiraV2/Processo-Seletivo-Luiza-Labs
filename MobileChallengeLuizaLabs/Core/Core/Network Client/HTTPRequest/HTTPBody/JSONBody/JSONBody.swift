@@ -7,15 +7,15 @@
 
 import Foundation
 
-struct JSONBody: HTTPBody {
+public struct JSONBody: HTTPBody {
 
     private let encoder: () throws -> Data
 
-    init<T: Encodable>(_ value: T, encoder: JSONEncoder = JSONEncoder()) {
+    public init<T: Encodable>(_ value: T, encoder: JSONEncoder = JSONEncoder()) {
         self.encoder = { try encoder.encode(value) }
     }
 
-    func getData() throws -> Data {
+    public func getData() throws -> Data {
         try encoder()
     }
 }

@@ -5,11 +5,11 @@
 //  Created by pedro.silveira on 18/12/21.
 //
 
-struct HTTPMethod: Hashable {
+public struct HTTPMethod: Hashable {
 
-    static let get = HTTPMethod(rawValue: "GET")
-    static let post = HTTPMethod(rawValue: "POST")
-    static let put = HTTPMethod(rawValue: "PUT")
+    public static let get = HTTPMethod(rawValue: "GET")
+    public static let post = HTTPMethod(rawValue: "POST")
+    public static let put = HTTPMethod(rawValue: "PUT")
 
     let rawValue: String
 }
