@@ -4,3 +4,10 @@
 //
 //  Created by pedro.silveira on 17/12/21.
 //
+
+// MARK: - Network Error
+"BAD_URL_DESCRIPTION" = "Could not use URL as Response";
+"NOT_MODIFIED_DESCRIPTION" = "Not Modified";
+"VALIDATION_FAILED_DESCRIPTION" = "Unprocessable Entity";
+"SERVICE_UNAVAILABLE_DESCRIPTION" = "Service Unavailable";
+"UNDEFINED_DESCRIPTION" = "undefined error";
