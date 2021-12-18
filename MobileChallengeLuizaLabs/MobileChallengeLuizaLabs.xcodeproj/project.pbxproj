@@ -12,8 +12,27 @@
 		BD8F9791276D4A1C002BD084 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9790276D4A1C002BD084 /* ViewController.swift */; };
 		BD8F9796276D4A1E002BD084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8F9795276D4A1E002BD084 /* Assets.xcassets */; };
 		BD8F9799276D4A1E002BD084 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8F9797276D4A1E002BD084 /* LaunchScreen.storyboard */; };
+		BD8F9A51276D9619002BD084 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8F9A50276D9619002BD084 /* Core.framework */; };
+		BD8F9A52276D9619002BD084 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD8F9A50276D9619002BD084 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BD8F9A55276D961D002BD084 /* MobileChallengeUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8F9A54276D961D002BD084 /* MobileChallengeUI.framework */; };
+		BD8F9A56276D961D002BD084 /* MobileChallengeUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD8F9A54276D961D002BD084 /* MobileChallengeUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FA6354EDA51B37A18DCFD247 /* Pods_MobileChallengeLuizaLabs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CED35532DD740AB321983AC /* Pods_MobileChallengeLuizaLabs.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BD8F9A53276D9619002BD084 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BD8F9A56276D961D002BD084 /* MobileChallengeUI.framework in Embed Frameworks */,
+				BD8F9A52276D9619002BD084 /* Core.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		49AF97E04B3D38907EDCFFB0 /* Pods-MobileChallengeLuizaLabs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileChallengeLuizaLabs.release.xcconfig"; path = "Target Support Files/Pods-MobileChallengeLuizaLabs/Pods-MobileChallengeLuizaLabs.release.xcconfig"; sourceTree = "<group>"; };
@@ -25,6 +44,8 @@
 		BD8F9795276D4A1E002BD084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD8F9798276D4A1E002BD084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD8F979A276D4A1E002BD084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD8F9A50276D9619002BD084 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD8F9A54276D961D002BD084 /* MobileChallengeUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MobileChallengeUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F042AFA7248668143969540A /* Pods-MobileChallengeLuizaLabs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileChallengeLuizaLabs.debug.xcconfig"; path = "Target Support Files/Pods-MobileChallengeLuizaLabs/Pods-MobileChallengeLuizaLabs.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -34,6 +55,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA6354EDA51B37A18DCFD247 /* Pods_MobileChallengeLuizaLabs.framework in Frameworks */,
+				BD8F9A55276D961D002BD084 /* MobileChallengeUI.framework in Frameworks */,
+				BD8F9A51276D9619002BD084 /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +66,8 @@
 		09AD04719D2AA3284008FBA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BD8F9A54276D961D002BD084 /* MobileChallengeUI.framework */,
+				BD8F9A50276D9619002BD084 /* Core.framework */,
 				4CED35532DD740AB321983AC /* Pods_MobileChallengeLuizaLabs.framework */,
 			);
 			name = Frameworks;
@@ -85,7 +110,6 @@
 				F042AFA7248668143969540A /* Pods-MobileChallengeLuizaLabs.debug.xcconfig */,
 				49AF97E04B3D38907EDCFFB0 /* Pods-MobileChallengeLuizaLabs.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -100,6 +124,7 @@
 				BD8F9785276D4A1C002BD084 /* Sources */,
 				BD8F9786276D4A1C002BD084 /* Frameworks */,
 				BD8F9787276D4A1C002BD084 /* Resources */,
+				BD8F9A53276D9619002BD084 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

@@ -20,6 +20,7 @@
 		BD8F999C276D7CA0002BD084 /* DummyCoordinatorEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F999B276D7CA0002BD084 /* DummyCoordinatorEvent.swift */; };
 		BD8F99A3276D7D1D002BD084 /* CoordinatorHandlerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F99A2276D7D1D002BD084 /* CoordinatorHandlerSpy.swift */; };
 		BD8F99A9276D7EF3002BD084 /* ParentCoordinatorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F99A8276D7EF3002BD084 /* ParentCoordinatorSpy.swift */; };
+		BD8F9A59276D964F002BD084 /* StateAbstraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9A58276D964F002BD084 /* StateAbstraction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		BD8F999B276D7CA0002BD084 /* DummyCoordinatorEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyCoordinatorEvent.swift; sourceTree = "<group>"; };
 		BD8F99A2276D7D1D002BD084 /* CoordinatorHandlerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorHandlerSpy.swift; sourceTree = "<group>"; };
 		BD8F99A8276D7EF3002BD084 /* ParentCoordinatorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentCoordinatorSpy.swift; sourceTree = "<group>"; };
+		BD8F9A58276D964F002BD084 /* StateAbstraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAbstraction.swift; sourceTree = "<group>"; };
 		DB9510DA54F74927096FBE7B /* Pods_CoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9F9480346F1A1607818115 /* Pods-Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core.release.xcconfig"; path = "Target Support Files/Pods-Core/Pods-Core.release.xcconfig"; sourceTree = "<group>"; };
 		FFA0CEA5BBF9A1F37417ACD3 /* Pods-CoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreTests.debug.xcconfig"; path = "Target Support Files/Pods-CoreTests/Pods-CoreTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			children = (
 				BD8F994A276D6EE6002BD084 /* Coordinator */,
 				BD8F98E7276D57D4002BD084 /* Resources */,
+				BD8F9A57276D962C002BD084 /* State */,
 				BD8F98E8276D57E6002BD084 /* StringConstants */,
 				BD8F98C0276D557F002BD084 /* Core.h */,
 				BD8F98C1276D557F002BD084 /* Info.plist */,
@@ -196,6 +199,14 @@
 				BD8F99A8276D7EF3002BD084 /* ParentCoordinatorSpy.swift */,
 			);
 			path = Spy;
+			sourceTree = "<group>";
+		};
+		BD8F9A57276D962C002BD084 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F9A58276D964F002BD084 /* StateAbstraction.swift */,
+			);
+			path = State;
 			sourceTree = "<group>";
 		};
 		E1681337362617AC098797E3 /* Frameworks */ = {
@@ -404,6 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD8F9A59276D964F002BD084 /* StateAbstraction.swift in Sources */,
 				BD8F994D276D6EFE002BD084 /* CoordinatorProtocol.swift in Sources */,
 				BD8F98F0276D5815002BD084 /* CoreStringConstants.swift in Sources */,
 				BD8F9954276D6FEC002BD084 /* CoordinatorEvent.swift in Sources */,
