@@ -33,6 +33,7 @@
 		BD8F9AAF276E2D2A002BD084 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9AAE276E2D2A002BD084 /* NetworkError.swift */; };
 		BD8F9AB6276E2F79002BD084 /* StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9AB5276E2F79002BD084 /* StatusCode.swift */; };
 		BD8F9ABF276E31EE002BD084 /* NetworkErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9ABE276E31EE002BD084 /* NetworkErrorTests.swift */; };
+		BD8F9AC5276E33B5002BD084 /* StatusCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9AC4276E33B5002BD084 /* StatusCodeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		BD8F9AAE276E2D2A002BD084 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		BD8F9AB5276E2F79002BD084 /* StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCode.swift; sourceTree = "<group>"; };
 		BD8F9ABE276E31EE002BD084 /* NetworkErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorTests.swift; sourceTree = "<group>"; };
+		BD8F9AC4276E33B5002BD084 /* StatusCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCodeTests.swift; sourceTree = "<group>"; };
 		DB9510DA54F74927096FBE7B /* Pods_CoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9F9480346F1A1607818115 /* Pods-Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core.release.xcconfig"; path = "Target Support Files/Pods-Core/Pods-Core.release.xcconfig"; sourceTree = "<group>"; };
 		FFA0CEA5BBF9A1F37417ACD3 /* Pods-CoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreTests.debug.xcconfig"; path = "Target Support Files/Pods-CoreTests/Pods-CoreTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -361,6 +363,7 @@
 		BD8F9ABC276E31C6002BD084 /* StatusCode */ = {
 			isa = PBXGroup;
 			children = (
+				BD8F9AC4276E33B5002BD084 /* StatusCodeTests.swift */,
 			);
 			path = StatusCode;
 			sourceTree = "<group>";
@@ -601,6 +604,7 @@
 			files = (
 				BD8F99A3276D7D1D002BD084 /* CoordinatorHandlerSpy.swift in Sources */,
 				BD8F9ABF276E31EE002BD084 /* NetworkErrorTests.swift in Sources */,
+				BD8F9AC5276E33B5002BD084 /* StatusCodeTests.swift in Sources */,
 				BD8F999C276D7CA0002BD084 /* DummyCoordinatorEvent.swift in Sources */,
 				BD8F9A8C276E2129002BD084 /* JSONBodyTests.swift in Sources */,
 				BD8F9963276D78CB002BD084 /* CoordinatorTests.swift in Sources */,
