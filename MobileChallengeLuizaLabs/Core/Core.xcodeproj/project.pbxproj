@@ -23,6 +23,8 @@
 		BD8F9A59276D964F002BD084 /* StateAbstraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9A58276D964F002BD084 /* StateAbstraction.swift */; };
 		BD8F9A76276E2017002BD084 /* JSONBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9A75276E2017002BD084 /* JSONBody.swift */; };
 		BD8F9A7C276E202B002BD084 /* HTTPBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9A7B276E202B002BD084 /* HTTPBody.swift */; };
+		BD8F9A80276E20AB002BD084 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9A7F276E20AB002BD084 /* HTTPMethod.swift */; };
+		BD8F9A84276E20D1002BD084 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9A83276E20D1002BD084 /* HTTPRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		BD8F9A58276D964F002BD084 /* StateAbstraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAbstraction.swift; sourceTree = "<group>"; };
 		BD8F9A75276E2017002BD084 /* JSONBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONBody.swift; sourceTree = "<group>"; };
 		BD8F9A7B276E202B002BD084 /* HTTPBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPBody.swift; sourceTree = "<group>"; };
+		BD8F9A7F276E20AB002BD084 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		BD8F9A83276E20D1002BD084 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
 		DB9510DA54F74927096FBE7B /* Pods_CoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9F9480346F1A1607818115 /* Pods-Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core.release.xcconfig"; path = "Target Support Files/Pods-Core/Pods-Core.release.xcconfig"; sourceTree = "<group>"; };
 		FFA0CEA5BBF9A1F37417ACD3 /* Pods-CoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreTests.debug.xcconfig"; path = "Target Support Files/Pods-CoreTests/Pods-CoreTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -227,6 +231,7 @@
 			children = (
 				BD8F9A73276E1FFA002BD084 /* HTTPBody */,
 				BD8F9A72276E1FE9002BD084 /* HTTPMethod */,
+				BD8F9A83276E20D1002BD084 /* HTTPRequest.swift */,
 			);
 			path = HTTPRequest;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 		BD8F9A72276E1FE9002BD084 /* HTTPMethod */ = {
 			isa = PBXGroup;
 			children = (
+				BD8F9A7F276E20AB002BD084 /* HTTPMethod.swift */,
 			);
 			path = HTTPMethod;
 			sourceTree = "<group>";
@@ -465,7 +471,9 @@
 				BD8F994D276D6EFE002BD084 /* CoordinatorProtocol.swift in Sources */,
 				BD8F98F0276D5815002BD084 /* CoreStringConstants.swift in Sources */,
 				BD8F9954276D6FEC002BD084 /* CoordinatorEvent.swift in Sources */,
+				BD8F9A80276E20AB002BD084 /* HTTPMethod.swift in Sources */,
 				BD8F995A276D719A002BD084 /* Coordinator.swift in Sources */,
+				BD8F9A84276E20D1002BD084 /* HTTPRequest.swift in Sources */,
 				BD8F9A76276E2017002BD084 /* JSONBody.swift in Sources */,
 				BD8F9A7C276E202B002BD084 /* HTTPBody.swift in Sources */,
 			);
