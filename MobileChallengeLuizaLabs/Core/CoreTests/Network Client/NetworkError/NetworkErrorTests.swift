@@ -25,7 +25,7 @@ final class NetworkErrorTests: QuickSpec {
                 }
 
                 it("Should have correct status code and description") {
-                    expect(sut.description).to(equal("Could not use URL as Response"))
+                    expect(sut.errorDescription).to(equal("Could not use URL as Response"))
                     expect(sut.statusCode).to(equal(.undefined))
                 }
             }
@@ -37,7 +37,7 @@ final class NetworkErrorTests: QuickSpec {
                 }
 
                 it("Should have correct status code and description") {
-                    expect(sut.description).to(equal("Not Modified"))
+                    expect(sut.errorDescription).to(equal("Not Modified"))
                     expect(sut.statusCode).to(equal(.notModified))
                 }
             }
@@ -49,7 +49,7 @@ final class NetworkErrorTests: QuickSpec {
                 }
 
                 it("Should have correct status code and description") {
-                    expect(sut.description).to(equal("Unprocessable Entity"))
+                    expect(sut.errorDescription).to(equal("Unprocessable Entity"))
                     expect(sut.statusCode).to(equal(.validationFailed))
                 }
             }
@@ -61,7 +61,7 @@ final class NetworkErrorTests: QuickSpec {
                 }
 
                 it("Should have correct status code and description") {
-                    expect(sut.description).to(equal("Service Unavailable"))
+                    expect(sut.errorDescription).to(equal("Service Unavailable"))
                     expect(sut.statusCode).to(equal(.serviceUnavailable))
                 }
             }
@@ -73,7 +73,7 @@ final class NetworkErrorTests: QuickSpec {
                 }
 
                 it("Should have correct status code and description") {
-                    expect(sut.description).to(equal("undefined error"))
+                    expect(sut.errorDescription).to(equal("undefined error"))
                     expect(sut.statusCode).to(equal(.undefined))
                 }
             }
