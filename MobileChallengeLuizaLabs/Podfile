@@ -45,18 +45,18 @@ target 'Core' do
   end
 end
 
-# target 'CoreUI' do
-#   use_frameworks!
+target 'MobileChallengeUI' do
+  use_frameworks!
 
-#   project 'CoreUI/CoreUI.xcodeproj'
+  project 'MobileChallengeUI/MobileChallengeUI.xcodeproj'
 
-#   tools_pods
+  tools_pods
 
-#   target 'CoreUITests' do
-#     inherit! :search_paths
+  target 'MobileChallengeUITests' do
+    inherit! :search_paths
 
-#     project 'CoreUI/CoreUI.xcodeproj'
+    project 'MobileChallengeUI/MobileChallengeUI.xcodeproj'
     
-#     tests_pods
-#   end
-# end
+    tests_pods
+  end
+end

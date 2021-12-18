@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BD8F9788276D4A1C002BD084"
-               BuildableName = "MobileChallengeLuizaLabs.app"
-               BlueprintName = "MobileChallengeLuizaLabs"
-               ReferencedContainer = "container:MobileChallengeLuizaLabs.xcodeproj">
+               BlueprintIdentifier = "BD8F99B5276D8230002BD084"
+               BuildableName = "MobileChallengeUI.framework"
+               BlueprintName = "MobileChallengeUI"
+               ReferencedContainer = "container:MobileChallengeUI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,24 +32,10 @@
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BD8F9788276D4A1C002BD084"
-            BuildableName = "MobileChallengeLuizaLabs.app"
-            BlueprintName = "MobileChallengeLuizaLabs"
-            ReferencedContainer = "container:MobileChallengeLuizaLabs.xcodeproj">
-         </BuildableReference>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BD8F98BC276D557F002BD084"
-            BuildableName = "Core.framework"
-            BlueprintName = "Core"
-            ReferencedContainer = "container:Core/Core.xcodeproj">
-         </BuildableReference>
-         <BuildableReference
-            BuildableIdentifier = "primary"
             BlueprintIdentifier = "BD8F99B5276D8230002BD084"
             BuildableName = "MobileChallengeUI.framework"
             BlueprintName = "MobileChallengeUI"
-            ReferencedContainer = "container:MobileChallengeUI/MobileChallengeUI.xcodeproj">
+            ReferencedContainer = "container:MobileChallengeUI.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
@@ -57,20 +43,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BD8F98C5276D557F002BD084"
-               BuildableName = "CoreTests.xctest"
-               BlueprintName = "CoreTests"
-               ReferencedContainer = "container:Core/Core.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "BD8F99BE276D8230002BD084"
                BuildableName = "MobileChallengeUITests.xctest"
                BlueprintName = "MobileChallengeUITests"
-               ReferencedContainer = "container:MobileChallengeUI/MobileChallengeUI.xcodeproj">
+               ReferencedContainer = "container:MobileChallengeUI.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -85,16 +61,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BD8F9788276D4A1C002BD084"
-            BuildableName = "MobileChallengeLuizaLabs.app"
-            BlueprintName = "MobileChallengeLuizaLabs"
-            ReferencedContainer = "container:MobileChallengeLuizaLabs.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -102,16 +68,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BD8F9788276D4A1C002BD084"
-            BuildableName = "MobileChallengeLuizaLabs.app"
-            BlueprintName = "MobileChallengeLuizaLabs"
-            ReferencedContainer = "container:MobileChallengeLuizaLabs.xcodeproj">
+            BlueprintIdentifier = "BD8F99B5276D8230002BD084"
+            BuildableName = "MobileChallengeUI.framework"
+            BlueprintName = "MobileChallengeUI"
+            ReferencedContainer = "container:MobileChallengeUI.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

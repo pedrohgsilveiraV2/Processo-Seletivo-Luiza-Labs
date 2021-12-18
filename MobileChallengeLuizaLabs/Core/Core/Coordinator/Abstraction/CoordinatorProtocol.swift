@@ -11,7 +11,3 @@ public protocol CoordinatorProtocol: AnyObject {
     func handle(_ event: CoordinatorEvent)
     func start(_ completion: (() -> Void)?)
 }
-
-public extension CoordinatorProtocol {
-    var parentCoordinator: CoordinatorProtocol? { return nil }
-}
