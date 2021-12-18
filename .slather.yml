@@ -1,0 +1,7 @@
+coverage_service: cobertura_xml
+xcodeproj: MobileChallengeLuizaLabs.xcworkspace
+input_format: profdata
+output_directory: Coverage/
+build_directory: build/Build/
+scheme: 'MobileChallengeLuizaLabs'
+ignore:
