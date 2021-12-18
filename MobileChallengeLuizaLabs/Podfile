@@ -1,0 +1,60 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '14.4'
+
+project 'MobileChallengeLuizaLabs'
+
+install! 'cocoapods', :warn_for_multiple_pod_sources => false, :deterministic_uuids => false
+
+inhibit_all_warnings!
+
+workspace 'MobileChallengeLuizaLabs.xcworkspace'
+
+def tools_pods
+  pod 'SwiftGen'
+end
+
+def tests_pods
+  pod 'Nimble'
+  pod 'Nimble-Snapshots'
+  pod 'Quick'
+end
+
+target 'MobileChallengeLuizaLabs' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MobileChallengeLuizaLabs
+
+end
+
+target 'Core' do
+  use_frameworks!
+
+  project 'Core/Core.xcodeproj'
+
+  tools_pods
+
+  target 'CoreTests' do
+    inherit! :search_paths
+
+    project 'Core/Core.xcodeproj'
+    
+    tests_pods
+  end
+end
+
+target 'MobileChallengeUI' do
+  use_frameworks!
+
+  project 'MobileChallengeUI/MobileChallengeUI.xcodeproj'
+
+  tools_pods
+
+  target 'MobileChallengeUITests' do
+    inherit! :search_paths
+
+    project 'MobileChallengeUI/MobileChallengeUI.xcodeproj'
+    
+    tests_pods
+  end
+end
