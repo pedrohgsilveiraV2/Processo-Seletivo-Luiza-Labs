@@ -139,7 +139,7 @@
 		BD8F98BF276D557F002BD084 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				BD8F9A70276E142D002BD084 /* Network Client */,
+				BD8F9A70276E142D002BD084 /* NetworkClient */,
 				BD8F994A276D6EE6002BD084 /* Coordinator */,
 				BD8F98E7276D57D4002BD084 /* Resources */,
 				BD8F9A57276D962C002BD084 /* State */,
@@ -237,7 +237,7 @@
 			path = State;
 			sourceTree = "<group>";
 		};
-		BD8F9A70276E142D002BD084 /* Network Client */ = {
+		BD8F9A70276E142D002BD084 /* NetworkClient */ = {
 			isa = PBXGroup;
 			children = (
 				BD8F9A71276E1FD3002BD084 /* HTTPRequest */,
@@ -245,7 +245,7 @@
 				BD8F9AB4276E2F66002BD084 /* StatusCode */,
 				BD8F9A9C276E247F002BD084 /* URLRequestBuilder */,
 			);
-			path = "Network Client";
+			path = NetworkClient;
 			sourceTree = "<group>";
 		};
 		BD8F9A71276E1FD3002BD084 /* HTTPRequest */ = {
