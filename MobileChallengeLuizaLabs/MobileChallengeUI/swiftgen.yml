@@ -1,0 +1,6 @@
+  output_dir: 'MobileChallengeUI/Resources/'
+  strings:
+    inputs: MobileChallengeUI/StringConstants/MobileChallengeUI.strings
+    outputs:
+      - templateName: structured-swift4
+        output: MobileChallengeUIStringConstants.swift
