@@ -33,7 +33,7 @@ jobs:
         slather setup
         bundle exec pod install
         xcodebuild build-for-testing \
-        -project 'MobileChallengeLuizaLabs/MobileChallengeLuizaLabs.xcworkspace' \
+        -project 'MobileChallengeLuizaLabs.xcworkspace' \
         -scheme 'MobileChallengeLuizaLabs' \
         -destination 'platform=iOS Simulator,name=iPhone 8' \
         -derivedDataPath build \
@@ -72,7 +72,7 @@ jobs:
       run: |
         set -o pipefail
         xcodebuild test-without-building \
-        -project 'MobileChallengeLuizaLabs/MobileChallengeLuizaLabs.xcworkspace' \
+        -project 'MobileChallengeLuizaLabs.xcworkspace' \
         -scheme 'MobileChallengeLuizaLabs' \
         -destination 'platform=iOS Simulator,name=iPhone 8' \
         -derivedDataPath build \
