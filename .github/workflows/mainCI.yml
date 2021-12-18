@@ -17,10 +17,12 @@ jobs:
       with: 
         fetch-depth: 0
 
-    - name: Set Gems
+    - name: Set Ruby version
       uses: ruby/setup-ruby@v1
       with:
        ruby-version: 2.6.5
+  
+    - name: Set Gems
       run: |
         gem install bundler
         bundle install
