@@ -9,10 +9,10 @@ import Foundation
 
 enum StatusCode: Int {
 
-    case ok
-    case notModified
-    case validationFailed
-    case serviceUnavailable
+    case ok = 200
+    case notModified = 304
+    case validationFailed = 422
+    case serviceUnavailable = 503
     case undefined
 
     typealias RawValue = Int

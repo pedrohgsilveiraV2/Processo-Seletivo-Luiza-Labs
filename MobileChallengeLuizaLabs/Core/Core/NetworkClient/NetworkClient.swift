@@ -16,13 +16,7 @@ public struct NetworkClient: NetworkRequestable {
     }
 
     private func decode<T: Decodable>(decodableType: T.Type, data: Data) -> T? {
-
-        do {
-            let decoded = try JSONDecoder().decode(decodableType.self, from: data)
-            return decoded
-        } catch {
-            return nil
-        }
+        return try? JSONDecoder().decode(decodableType.self, from: data)
     }
 
     private func validateResponse<T: Decodable>(by code: StatusCode,
