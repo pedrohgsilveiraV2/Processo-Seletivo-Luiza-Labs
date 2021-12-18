@@ -25,6 +25,8 @@
 		BD8F9A7C276E202B002BD084 /* HTTPBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9A7B276E202B002BD084 /* HTTPBody.swift */; };
 		BD8F9A80276E20AB002BD084 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9A7F276E20AB002BD084 /* HTTPMethod.swift */; };
 		BD8F9A84276E20D1002BD084 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9A83276E20D1002BD084 /* HTTPRequest.swift */; };
+		BD8F9A8C276E2129002BD084 /* JSONBodyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9A8B276E2129002BD084 /* JSONBodyTests.swift */; };
+		BD8F9A93276E2180002BD084 /* CodableJSONBodyDummy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9A92276E2180002BD084 /* CodableJSONBodyDummy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		BD8F9A7B276E202B002BD084 /* HTTPBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPBody.swift; sourceTree = "<group>"; };
 		BD8F9A7F276E20AB002BD084 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		BD8F9A83276E20D1002BD084 /* HTTPRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		BD8F9A8B276E2129002BD084 /* JSONBodyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONBodyTests.swift; sourceTree = "<group>"; };
+		BD8F9A92276E2180002BD084 /* CodableJSONBodyDummy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableJSONBodyDummy.swift; sourceTree = "<group>"; };
 		DB9510DA54F74927096FBE7B /* Pods_CoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9F9480346F1A1607818115 /* Pods-Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core.release.xcconfig"; path = "Target Support Files/Pods-Core/Pods-Core.release.xcconfig"; sourceTree = "<group>"; };
 		FFA0CEA5BBF9A1F37417ACD3 /* Pods-CoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreTests.debug.xcconfig"; path = "Target Support Files/Pods-CoreTests/Pods-CoreTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 		BD8F98CA276D557F002BD084 /* CoreTests */ = {
 			isa = PBXGroup;
 			children = (
+				BD8F9A87276E20FD002BD084 /* Network Client */,
 				BD8F9961276D78B9002BD084 /* Coordinator */,
 				BD8F98CD276D557F002BD084 /* Info.plist */,
 			);
@@ -259,6 +264,47 @@
 				BD8F9A75276E2017002BD084 /* JSONBody.swift */,
 			);
 			path = JSONBody;
+			sourceTree = "<group>";
+		};
+		BD8F9A87276E20FD002BD084 /* Network Client */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F9A88276E2107002BD084 /* HTTPRequest */,
+			);
+			path = "Network Client";
+			sourceTree = "<group>";
+		};
+		BD8F9A88276E2107002BD084 /* HTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F9A8A276E2117002BD084 /* HTTPBody */,
+				BD8F9A89276E210F002BD084 /* HTTPMethod */,
+			);
+			path = HTTPRequest;
+			sourceTree = "<group>";
+		};
+		BD8F9A89276E210F002BD084 /* HTTPMethod */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HTTPMethod;
+			sourceTree = "<group>";
+		};
+		BD8F9A8A276E2117002BD084 /* HTTPBody */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F9A91276E2170002BD084 /* Dummy */,
+				BD8F9A8B276E2129002BD084 /* JSONBodyTests.swift */,
+			);
+			path = HTTPBody;
+			sourceTree = "<group>";
+		};
+		BD8F9A91276E2170002BD084 /* Dummy */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F9A92276E2180002BD084 /* CodableJSONBodyDummy.swift */,
+			);
+			path = Dummy;
 			sourceTree = "<group>";
 		};
 		E1681337362617AC098797E3 /* Frameworks */ = {
@@ -485,8 +531,10 @@
 			files = (
 				BD8F99A3276D7D1D002BD084 /* CoordinatorHandlerSpy.swift in Sources */,
 				BD8F999C276D7CA0002BD084 /* DummyCoordinatorEvent.swift in Sources */,
+				BD8F9A8C276E2129002BD084 /* JSONBodyTests.swift in Sources */,
 				BD8F9963276D78CB002BD084 /* CoordinatorTests.swift in Sources */,
 				BD8F99A9276D7EF3002BD084 /* ParentCoordinatorSpy.swift in Sources */,
+				BD8F9A93276E2180002BD084 /* CodableJSONBodyDummy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
