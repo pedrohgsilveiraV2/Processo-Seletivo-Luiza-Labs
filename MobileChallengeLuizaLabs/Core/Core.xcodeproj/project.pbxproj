@@ -21,6 +21,8 @@
 		BD8F99A3276D7D1D002BD084 /* CoordinatorHandlerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F99A2276D7D1D002BD084 /* CoordinatorHandlerSpy.swift */; };
 		BD8F99A9276D7EF3002BD084 /* ParentCoordinatorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F99A8276D7EF3002BD084 /* ParentCoordinatorSpy.swift */; };
 		BD8F9A59276D964F002BD084 /* StateAbstraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9A58276D964F002BD084 /* StateAbstraction.swift */; };
+		BD8F9A76276E2017002BD084 /* JSONBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9A75276E2017002BD084 /* JSONBody.swift */; };
+		BD8F9A7C276E202B002BD084 /* HTTPBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9A7B276E202B002BD084 /* HTTPBody.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		BD8F99A2276D7D1D002BD084 /* CoordinatorHandlerSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorHandlerSpy.swift; sourceTree = "<group>"; };
 		BD8F99A8276D7EF3002BD084 /* ParentCoordinatorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentCoordinatorSpy.swift; sourceTree = "<group>"; };
 		BD8F9A58276D964F002BD084 /* StateAbstraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateAbstraction.swift; sourceTree = "<group>"; };
+		BD8F9A75276E2017002BD084 /* JSONBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONBody.swift; sourceTree = "<group>"; };
+		BD8F9A7B276E202B002BD084 /* HTTPBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPBody.swift; sourceTree = "<group>"; };
 		DB9510DA54F74927096FBE7B /* Pods_CoreTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA9F9480346F1A1607818115 /* Pods-Core.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core.release.xcconfig"; path = "Target Support Files/Pods-Core/Pods-Core.release.xcconfig"; sourceTree = "<group>"; };
 		FFA0CEA5BBF9A1F37417ACD3 /* Pods-CoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreTests.debug.xcconfig"; path = "Target Support Files/Pods-CoreTests/Pods-CoreTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 		BD8F98BF276D557F002BD084 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				BD8F9A70276E142D002BD084 /* Network Client */,
 				BD8F994A276D6EE6002BD084 /* Coordinator */,
 				BD8F98E7276D57D4002BD084 /* Resources */,
 				BD8F9A57276D962C002BD084 /* State */,
@@ -207,6 +212,47 @@
 				BD8F9A58276D964F002BD084 /* StateAbstraction.swift */,
 			);
 			path = State;
+			sourceTree = "<group>";
+		};
+		BD8F9A70276E142D002BD084 /* Network Client */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F9A71276E1FD3002BD084 /* HTTPRequest */,
+			);
+			path = "Network Client";
+			sourceTree = "<group>";
+		};
+		BD8F9A71276E1FD3002BD084 /* HTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F9A73276E1FFA002BD084 /* HTTPBody */,
+				BD8F9A72276E1FE9002BD084 /* HTTPMethod */,
+			);
+			path = HTTPRequest;
+			sourceTree = "<group>";
+		};
+		BD8F9A72276E1FE9002BD084 /* HTTPMethod */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HTTPMethod;
+			sourceTree = "<group>";
+		};
+		BD8F9A73276E1FFA002BD084 /* HTTPBody */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F9A74276E2001002BD084 /* JSONBody */,
+				BD8F9A7B276E202B002BD084 /* HTTPBody.swift */,
+			);
+			path = HTTPBody;
+			sourceTree = "<group>";
+		};
+		BD8F9A74276E2001002BD084 /* JSONBody */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F9A75276E2017002BD084 /* JSONBody.swift */,
+			);
+			path = JSONBody;
 			sourceTree = "<group>";
 		};
 		E1681337362617AC098797E3 /* Frameworks */ = {
@@ -420,6 +466,8 @@
 				BD8F98F0276D5815002BD084 /* CoreStringConstants.swift in Sources */,
 				BD8F9954276D6FEC002BD084 /* CoordinatorEvent.swift in Sources */,
 				BD8F995A276D719A002BD084 /* Coordinator.swift in Sources */,
+				BD8F9A76276E2017002BD084 /* JSONBody.swift in Sources */,
+				BD8F9A7C276E202B002BD084 /* HTTPBody.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
