@@ -26,7 +26,11 @@ final class RepositoryRequestTests: QuickSpec {
                 }
 
                 it("Should generate expected url path") {
-                    expect(sut.urlComponents.path).to(equal("/search/repositories"))
+                    expect(sut.urlComponents.string).to(equal("https://api.github.com"))
+                }
+
+                it("Should generate expected path") {
+                    expect(sut.path).to(equal(["/search", "repositories"]))
                 }
 
                 it("Should generate expected body") {

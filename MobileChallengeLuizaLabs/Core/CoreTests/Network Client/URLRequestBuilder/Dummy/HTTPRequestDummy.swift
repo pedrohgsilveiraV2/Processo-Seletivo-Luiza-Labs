@@ -35,4 +35,8 @@ struct HTTPRequestDummy: HTTPRequest {
     var queryParameters: [String : String]? {
         ["SomeQueryKey": "SomeQueryValue"]
     }
+
+    var path: [String]? {
+        ["/SomePath"]
+    }
 }

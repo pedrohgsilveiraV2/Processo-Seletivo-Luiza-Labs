@@ -27,6 +27,10 @@ public struct URLRequestBuilder {
         request.queryParameters
     }
 
+    private var path: [String]? {
+        request.path
+    }
+
     private func createRequest(url: URL, method: HTTPMethod) -> NSMutableURLRequest {
         let request = NSMutableURLRequest(url: url)
 
@@ -37,6 +41,10 @@ public struct URLRequestBuilder {
 
     public func createRequest() -> NSMutableURLRequest? {
         var urlComponents = request.urlComponents
+
+        if let path = path {
+            urlComponents.path = path.joined(separator: "/")
+        }
 
         if let queryParameters = queryParameters {
             urlComponents.queryItems = queryParameters.map { URLQueryItem(name: $0.key, value: $0.value) }

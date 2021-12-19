@@ -12,9 +12,15 @@ import MobileChallengeUI
 final class RepositoryListViewController: UIViewController {
 
     // MARK: - Properties
+    var coordinator: CoordinatorProtocol?
+
     private let provider: RepositoryListProviderProtocol
 
     private var state: RepositoryListState = .initialState
+
+    private var didFinishRequest: Bool = true
+
+    private var credentials: [PullRequestCredentials] = []
 
     private lazy var mainView: RepositoryListView = {
         let view = RepositoryListView()
@@ -22,8 +28,6 @@ final class RepositoryListViewController: UIViewController {
 
         return view
     }()
-
-    private var didFinishRequest: Bool = true
 
     // MARK: - Life Cycle
     init(provider: RepositoryListProviderProtocol = RepositoryListProvider()) {
@@ -84,6 +88,12 @@ extension RepositoryListViewController {
                     return EndlessScrollTableViewCellViewModel(repositoryName: $0.name, repositoryDescription: $0.description, forkScore: $0.forksCount, starScore: $0.stargazersCount, userName: $0.owner.ownerName, profileImage: UIImage())
                 }
 
+                viewModels.forEach {
+                    let credential = PullRequestCredentials(repoOwner: $0.userName, repoName: $0.repositoryName)
+
+                    self.credentials.append(credential)
+                }
+
                 self.stopLoading()
                 self.mainView.updateRepositoryContent(with: viewModels)
                 self.didFinishRequest = true
@@ -98,7 +108,9 @@ extension RepositoryListViewController {
 // MARK: - Repository List View Delegate Methods
 extension RepositoryListViewController: RepositoryListViewDelegate {
     func didSelectRow(at indexPath: IndexPath) {
-        return
+        let credential = credentials[indexPath.row]
+
+        coordinator?.handle(RepositoryCoordinatorEvents.goToPullRequestListViewController(with: credential))
     }
 
     func didEndScroll() {

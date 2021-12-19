@@ -19,9 +19,11 @@ open class Coordinator: CoordinatorProtocol {
         self.parentCoordinator = nil
     }
 
-    public func register(eventType: CoordinatorEvent.Type, handler: @escaping (CoordinatorEvent) -> Void) {
-        registeredEvents[eventType.key] = { event in
-            handler(event)
+    public func register<Event: CoordinatorEvent>(eventType: Event.Type, handler: @escaping (Event) -> Void) {
+        self.registeredEvents[eventType.key] = { event in
+            if let event = event as? Event {
+                handler(event)
+            }
         }
     }
 

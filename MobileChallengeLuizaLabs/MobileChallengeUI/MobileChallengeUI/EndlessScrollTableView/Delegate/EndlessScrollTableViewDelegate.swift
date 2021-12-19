@@ -33,9 +33,6 @@ final class EndlessScrollTableViewDelegate: NSObject, UITableViewDelegate {
         return Constants.rowHeight
     }
 
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-    }
-
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let scrollViewHeight = scrollView.frame.size.height
 
