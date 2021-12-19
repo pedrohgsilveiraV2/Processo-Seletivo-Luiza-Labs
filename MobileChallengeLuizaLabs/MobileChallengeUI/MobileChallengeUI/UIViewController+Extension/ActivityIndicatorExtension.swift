@@ -13,9 +13,9 @@ extension UIViewController {
         static var loader: UInt8 = 0
     }
 
-    private(set) var activityIndicator: UIActivityIndicatorView? {
+    private(set) var genericLoader: GenericLoaderView? {
         get {
-            return objc_getAssociatedObject(self, &AssociatedKey.loader) as? UIActivityIndicatorView
+            return objc_getAssociatedObject(self, &AssociatedKey.loader) as? GenericLoaderView
         }
 
         set {
@@ -25,20 +25,18 @@ extension UIViewController {
 
     public func startLoading() {
         stopLoading()
-        let activityIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.medium)
-        self.activityIndicator = activityIndicator
-        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
-        activityIndicator.hidesWhenStopped = true
-        self.view.addSubview(activityIndicator)
-        activityIndicator.startAnimating()
-        activityIndicator.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
-        activityIndicator.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
+        let genericLoader = GenericLoaderView()
+        self.genericLoader = genericLoader
+        view.addSubview(genericLoader)
+        genericLoader.snp.makeConstraints { make in
+            make.top.leading.trailing.bottom.equalToSuperview()
+        }
     }
 
     public func stopLoading() {
-        guard let activityIndicator = self.activityIndicator else { return }
-        activityIndicator.stopAnimating()
-        activityIndicator.removeFromSuperview()
-        self.activityIndicator = nil
+        guard let genericLoader = self.genericLoader else { return }
+        genericLoader.activityIndicator.stopAnimating()
+        genericLoader.removeFromSuperview()
+        self.genericLoader = nil
     }
 }

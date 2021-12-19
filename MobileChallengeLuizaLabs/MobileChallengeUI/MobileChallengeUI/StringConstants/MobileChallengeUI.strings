@@ -8,3 +8,8 @@
 // MARK: - Score Item Type
 "FORK_SCORE_ITEM_DESCRIPTION" = "fork";
 "STAR_CORE_ITEM_DESCRIPTION" = "star";
+
+// MARK: - Generic Error View
+"GENERIC_ERROR_VIEW_DESCRIPTION" = "Infelizmente tivemos um error =(";
+"GENERIC_ERROR_VIEW_RETRY_ACTION_DESCRIPTION" = "Tentar novamente";
+

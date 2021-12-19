@@ -18,11 +18,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             return
         }
 
-        // Setup Coordinator
         coordinator = MainCoordinator(rootViewController: navigationController)
         coordinator?.start(nil)
 
-        // Setup Window
         window = UIWindow(windowScene: scene)
         window?.makeKeyAndVisible()
         window?.rootViewController = coordinator?.rootViewController

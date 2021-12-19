@@ -48,6 +48,8 @@ final class PullRequestListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.title = L10n.pullRequestListViewControllerTitle
+
         fetchRepositories()
     }
 }
@@ -80,9 +82,11 @@ extension PullRequestListViewController {
 
                 self.stopLoading()
                 self.mainView.updatePullRequestContent(with: viewModels)
-            case .failure(let error):
-                debugPrint(error)
-                break
+            case .failure:
+                self.stopLoading()
+                self.showErrorView { [weak self] in
+                    self?.fetchRepositories()
+                }
             }
         }
     }

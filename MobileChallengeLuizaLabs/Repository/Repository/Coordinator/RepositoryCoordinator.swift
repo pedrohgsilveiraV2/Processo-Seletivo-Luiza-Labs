@@ -10,8 +10,10 @@ import UIKit
 
 public final class RepositoryCoordinator: Coordinator {
 
+    // MARK: - Properties
     let rootViewController: UINavigationController
 
+    // MARK: - Life Cycle
     public init(rootViewController: UINavigationController) {
         self.rootViewController = rootViewController
 
@@ -28,6 +30,7 @@ public final class RepositoryCoordinator: Coordinator {
         rootViewController.pushViewController(repositoryListViewController, animated: true)
     }
 
+    // MARK: - Accessory Methods
     private func goToPullRequestList(with credentials: PullRequestCredentials) {
         let pullRequestListViewController = PullRequestListViewController(credentials: credentials)
 
@@ -46,6 +49,7 @@ public final class RepositoryCoordinator: Coordinator {
     }
 }
 
+// MARK: - Repository Coordinator Events Handler
 private extension RepositoryCoordinator {
     func handle(_ event: RepositoryCoordinatorEvents) {
         switch event {

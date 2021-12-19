@@ -10,6 +10,7 @@ import Core
 
 final class PullRequestListTableViewCell: UITableViewCell {
 
+    // MARK: - Properties
     static var identifier: String {
         return String(describing: self)
     }
@@ -48,6 +49,7 @@ final class PullRequestListTableViewCell: UITableViewCell {
         return label
     }()
 
+    // MARK: - Life Cycle
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
@@ -68,6 +70,7 @@ final class PullRequestListTableViewCell: UITableViewCell {
     }
 }
 
+// MARK: - View Codable Methods
 extension PullRequestListTableViewCell: ViewCodable {
     func buildViewHierarchy() {
         contentView.addSubview(pullRequestTitleLabel)

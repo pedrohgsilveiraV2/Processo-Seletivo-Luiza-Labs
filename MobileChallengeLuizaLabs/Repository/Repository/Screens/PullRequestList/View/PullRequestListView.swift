@@ -15,6 +15,7 @@ protocol PullRequestListViewDelegate: AnyObject {
 
 final class PullRequestListView: UIView {
 
+    // MARK: - Properties
     weak var delegate: PullRequestListViewDelegate?
 
     private lazy var didSelectRowHandler: (IndexPath) -> Void = { [weak self] indexPath in
@@ -24,6 +25,7 @@ final class PullRequestListView: UIView {
 
     private lazy var tableView = PullRequestListTableView(didSelectRowHandler: didSelectRowHandler)
 
+    // MARK: - Life Cycle
     override init(frame: CGRect) {
         super.init(frame: frame)
 
@@ -40,6 +42,7 @@ final class PullRequestListView: UIView {
     }
 }
 
+// MARK: - View Codable Methods
 extension PullRequestListView: ViewCodable {
     func buildViewHierarchy() {
         addSubview(tableView)

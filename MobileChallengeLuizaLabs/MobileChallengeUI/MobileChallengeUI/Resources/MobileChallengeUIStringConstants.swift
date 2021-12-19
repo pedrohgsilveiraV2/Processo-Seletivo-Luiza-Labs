@@ -12,6 +12,10 @@ import Foundation
 internal enum L10n {
   /// fork
   internal static let forkScoreItemDescription = L10n.tr("MobileChallengeUI", "FORK_SCORE_ITEM_DESCRIPTION")
+  /// Infelizmente tivemos um error =(
+  internal static let genericErrorViewDescription = L10n.tr("MobileChallengeUI", "GENERIC_ERROR_VIEW_DESCRIPTION")
+  /// Tentar novamente
+  internal static let genericErrorViewRetryActionDescription = L10n.tr("MobileChallengeUI", "GENERIC_ERROR_VIEW_RETRY_ACTION_DESCRIPTION")
   /// star
   internal static let starCoreItemDescription = L10n.tr("MobileChallengeUI", "STAR_CORE_ITEM_DESCRIPTION")
 }
