@@ -10,6 +10,10 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  /// fork
+  internal static let forkScoreItemDescription = L10n.tr("MobileChallengeUI", "FORK_SCORE_ITEM_DESCRIPTION")
+  /// star
+  internal static let starCoreItemDescription = L10n.tr("MobileChallengeUI", "STAR_CORE_ITEM_DESCRIPTION")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

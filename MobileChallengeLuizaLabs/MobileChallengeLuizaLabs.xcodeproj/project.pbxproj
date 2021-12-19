@@ -131,6 +131,8 @@
 			dependencies = (
 			);
 			name = MobileChallengeLuizaLabs;
+			packageProductDependencies = (
+			);
 			productName = MobileChallengeLuizaLabs;
 			productReference = BD8F9789276D4A1C002BD084 /* MobileChallengeLuizaLabs.app */;
 			productType = "com.apple.product-type.application";
@@ -158,6 +160,8 @@
 				Base,
 			);
 			mainGroup = BD8F9780276D4A1C002BD084;
+			packageReferences = (
+			);
 			productRefGroup = BD8F978A276D4A1C002BD084 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
