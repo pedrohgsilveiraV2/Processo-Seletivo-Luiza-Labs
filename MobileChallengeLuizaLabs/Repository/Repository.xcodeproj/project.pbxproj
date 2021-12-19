@@ -37,6 +37,8 @@
 		BD9FF78A276FA8BB002A4FA0 /* PullRequestListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF789276FA8BB002A4FA0 /* PullRequestListViewController.swift */; };
 		BD9FF78F276FAB15002A4FA0 /* RepositoryCoordinatorEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF78E276FAB15002A4FA0 /* RepositoryCoordinatorEvents.swift */; };
 		BD9FF7A9276FBE0D002A4FA0 /* PullRequestPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF7A8276FBE0D002A4FA0 /* PullRequestPageViewController.swift */; };
+		BD9FF7B3276FC874002A4FA0 /* RepositoryCoordinatorTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF7B2276FC874002A4FA0 /* RepositoryCoordinatorTestCase.swift */; };
+		BD9FF7BC276FC952002A4FA0 /* RepositoryCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF7BB276FC952002A4FA0 /* RepositoryCoordinatorTests.swift */; };
 		E921F1E3A9D22B09D55D7F08 /* Pods_Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE48E846E57D7F6B398CA7F /* Pods_Repository.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +90,8 @@
 		BD9FF789276FA8BB002A4FA0 /* PullRequestListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestListViewController.swift; sourceTree = "<group>"; };
 		BD9FF78E276FAB15002A4FA0 /* RepositoryCoordinatorEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCoordinatorEvents.swift; sourceTree = "<group>"; };
 		BD9FF7A8276FBE0D002A4FA0 /* PullRequestPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestPageViewController.swift; sourceTree = "<group>"; };
+		BD9FF7B2276FC874002A4FA0 /* RepositoryCoordinatorTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCoordinatorTestCase.swift; sourceTree = "<group>"; };
+		BD9FF7BB276FC952002A4FA0 /* RepositoryCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCoordinatorTests.swift; sourceTree = "<group>"; };
 		DBA6995437CC3BF47247039D /* Pods-RepositoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepositoryTests.debug.xcconfig"; path = "Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +178,8 @@
 		BD8F9B96276F68B4002BD084 /* RepositoryTests */ = {
 			isa = PBXGroup;
 			children = (
+				BD9FF7B1276FC849002A4FA0 /* Coordinator */,
+				BD9FF7B0276FC842002A4FA0 /* Screens */,
 				BD8F9C10276F6F03002BD084 /* Service */,
 				BD8F9B99276F68B4002BD084 /* Info.plist */,
 			);
@@ -423,6 +429,30 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		BD9FF7B0276FC842002A4FA0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		BD9FF7B1276FC849002A4FA0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				BD9FF7B8276FC891002A4FA0 /* Spy */,
+				BD9FF7BB276FC952002A4FA0 /* RepositoryCoordinatorTests.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		BD9FF7B8276FC891002A4FA0 /* Spy */ = {
+			isa = PBXGroup;
+			children = (
+				BD9FF7B2276FC874002A4FA0 /* RepositoryCoordinatorTestCase.swift */,
+			);
+			path = Spy;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -649,7 +679,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD9FF7B3276FC874002A4FA0 /* RepositoryCoordinatorTestCase.swift in Sources */,
 				BD8F9C13276F6F18002BD084 /* RepositoryRequestTests.swift in Sources */,
+				BD9FF7BC276FC952002A4FA0 /* RepositoryCoordinatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
