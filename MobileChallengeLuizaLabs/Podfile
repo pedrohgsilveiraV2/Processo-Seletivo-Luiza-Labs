@@ -13,6 +13,7 @@ workspace 'MobileChallengeLuizaLabs.xcworkspace'
 
 def tools_pods
   pod 'SwiftGen'
+  pod 'SnapKit', '~> 5.0.0'
 end
 
 def tests_pods

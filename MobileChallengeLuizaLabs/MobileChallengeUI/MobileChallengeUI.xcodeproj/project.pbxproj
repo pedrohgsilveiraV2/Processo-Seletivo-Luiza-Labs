@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,7 +20,6 @@
 		BD8F9B3F276EC2C8002BD084 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9B3E276EC2C8002BD084 /* UserProfileView.swift */; };
 		BD8F9B46276EC391002BD084 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9B45276EC391002BD084 /* UserProfileViewModel.swift */; };
 		BD8F9B4F276EC4E4002BD084 /* UserProfileViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9B4E276EC4E4002BD084 /* UserProfileViewTests.swift */; };
-		BD8F9B57276EC7C5002BD084 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BD8F9B56276EC7C5002BD084 /* SnapKit */; };
 		BD8F9B5B276EC809002BD084 /* ScoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9B5A276EC809002BD084 /* ScoreItem.swift */; };
 		BD8F9B5F276ECC2F002BD084 /* ScoreItemViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9B5E276ECC2F002BD084 /* ScoreItemViewsTests.swift */; };
 		BD8F9B64276ED179002BD084 /* EndlessScrollTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9B63276ED179002BD084 /* EndlessScrollTableViewCellViewModel.swift */; };
@@ -69,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD8F9B57276EC7C5002BD084 /* SnapKit in Frameworks */,
 				BB99664461BF30B4C578A780 /* Pods_MobileChallengeUI.framework in Frameworks */,
 				BD8F9B33276EBEAD002BD084 /* Core.framework in Frameworks */,
 			);
@@ -277,7 +275,6 @@
 			);
 			name = MobileChallengeUI;
 			packageProductDependencies = (
-				BD8F9B56276EC7C5002BD084 /* SnapKit */,
 			);
 			productName = MobileChallengeUI;
 			productReference = BD8F99B6276D8230002BD084 /* MobileChallengeUI.framework */;
@@ -332,7 +329,6 @@
 			);
 			mainGroup = BD8F99AC276D8230002BD084;
 			packageReferences = (
-				BD8F9B55276EC7C5002BD084 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = BD8F99B7276D8230002BD084 /* Products */;
 			projectDirPath = "";
@@ -730,25 +726,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		BD8F9B55276EC7C5002BD084 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		BD8F9B56276EC7C5002BD084 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = BD8F9B55276EC7C5002BD084 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BD8F99AD276D8230002BD084 /* Project object */;
 }
