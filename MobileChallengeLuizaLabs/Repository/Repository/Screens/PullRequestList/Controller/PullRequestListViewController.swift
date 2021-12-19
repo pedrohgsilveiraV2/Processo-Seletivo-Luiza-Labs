@@ -80,9 +80,11 @@ extension PullRequestListViewController {
 
                 self.stopLoading()
                 self.mainView.updatePullRequestContent(with: viewModels)
-            case .failure(let error):
-                debugPrint(error)
-                break
+            case .failure:
+                self.stopLoading()
+                self.showErrorView { [weak self] in
+                    self?.fetchRepositories()
+                }
             }
         }
     }

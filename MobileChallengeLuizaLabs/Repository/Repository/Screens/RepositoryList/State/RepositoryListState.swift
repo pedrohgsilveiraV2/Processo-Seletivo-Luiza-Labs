@@ -32,17 +32,15 @@ enum RepositoryListState: StateAbstraction {
     case initialState
     case manipulated(currentValue: Int)
 
-    public enum InputEvent {
+    enum InputEvent {
         case didEndScroll
     }
 
-    /// State actions
-    public enum OutputAction {
+    enum OutputAction {
         case updateValues(withPage: Int)
     }
 
-    /// Method responsable for handling state events
-    public mutating func handleEvent(event: InputEvent) -> OutputAction? {
+    mutating func handleEvent(event: InputEvent) -> OutputAction? {
         switch (self, event) {
         case (.initialState, .didEndScroll):
             self = stateHandler?.setState(self) ?? .manipulated(currentValue: 1)

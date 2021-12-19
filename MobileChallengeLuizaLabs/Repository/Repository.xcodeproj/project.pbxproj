@@ -39,6 +39,9 @@
 		BD9FF7A9276FBE0D002A4FA0 /* PullRequestPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF7A8276FBE0D002A4FA0 /* PullRequestPageViewController.swift */; };
 		BD9FF7B3276FC874002A4FA0 /* RepositoryCoordinatorTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF7B2276FC874002A4FA0 /* RepositoryCoordinatorTestCase.swift */; };
 		BD9FF7BC276FC952002A4FA0 /* RepositoryCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF7BB276FC952002A4FA0 /* RepositoryCoordinatorTests.swift */; };
+		BD9FF7C9276FCB2A002A4FA0 /* PullRequestListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF7C8276FCB2A002A4FA0 /* PullRequestListViewControllerTests.swift */; };
+		BD9FF7D9276FCBEF002A4FA0 /* RepositoryCoordinatorSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF7D8276FCBEF002A4FA0 /* RepositoryCoordinatorSpy.swift */; };
+		BD9FF7E0276FCC9E002A4FA0 /* PullRequestListProviderStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF7DF276FCC9E002A4FA0 /* PullRequestListProviderStub.swift */; };
 		E921F1E3A9D22B09D55D7F08 /* Pods_Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE48E846E57D7F6B398CA7F /* Pods_Repository.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +95,9 @@
 		BD9FF7A8276FBE0D002A4FA0 /* PullRequestPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestPageViewController.swift; sourceTree = "<group>"; };
 		BD9FF7B2276FC874002A4FA0 /* RepositoryCoordinatorTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCoordinatorTestCase.swift; sourceTree = "<group>"; };
 		BD9FF7BB276FC952002A4FA0 /* RepositoryCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCoordinatorTests.swift; sourceTree = "<group>"; };
+		BD9FF7C8276FCB2A002A4FA0 /* PullRequestListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestListViewControllerTests.swift; sourceTree = "<group>"; };
+		BD9FF7D8276FCBEF002A4FA0 /* RepositoryCoordinatorSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCoordinatorSpy.swift; sourceTree = "<group>"; };
+		BD9FF7DF276FCC9E002A4FA0 /* PullRequestListProviderStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestListProviderStub.swift; sourceTree = "<group>"; };
 		DBA6995437CC3BF47247039D /* Pods-RepositoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepositoryTests.debug.xcconfig"; path = "Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,6 +187,7 @@
 				BD9FF7B1276FC849002A4FA0 /* Coordinator */,
 				BD9FF7B0276FC842002A4FA0 /* Screens */,
 				BD8F9C10276F6F03002BD084 /* Service */,
+				BD9FF7CC276FCBC9002A4FA0 /* Util */,
 				BD8F9B99276F68B4002BD084 /* Info.plist */,
 			);
 			path = RepositoryTests;
@@ -432,6 +439,8 @@
 		BD9FF7B0276FC842002A4FA0 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				BD9FF7C2276FCA8E002A4FA0 /* PullRequestList */,
+				BD9FF7C1276FCA87002A4FA0 /* RepositoryList */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -451,6 +460,70 @@
 				BD9FF7B2276FC874002A4FA0 /* RepositoryCoordinatorTestCase.swift */,
 			);
 			path = Spy;
+			sourceTree = "<group>";
+		};
+		BD9FF7C1276FCA87002A4FA0 /* RepositoryList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RepositoryList;
+			sourceTree = "<group>";
+		};
+		BD9FF7C2276FCA8E002A4FA0 /* PullRequestList */ = {
+			isa = PBXGroup;
+			children = (
+				BD9FF7C5276FCAC1002A4FA0 /* Controller */,
+				BD9FF7C4276FCABC002A4FA0 /* Provider */,
+				BD9FF7C3276FCAB7002A4FA0 /* View */,
+			);
+			path = PullRequestList;
+			sourceTree = "<group>";
+		};
+		BD9FF7C3276FCAB7002A4FA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD9FF7C4276FCABC002A4FA0 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		BD9FF7C5276FCAC1002A4FA0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BD9FF7DE276FCC78002A4FA0 /* Stub */,
+				BD9FF7C8276FCB2A002A4FA0 /* PullRequestListViewControllerTests.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BD9FF7CC276FCBC9002A4FA0 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BD9FF7D3276FCBDB002A4FA0 /* Spy */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		BD9FF7D3276FCBDB002A4FA0 /* Spy */ = {
+			isa = PBXGroup;
+			children = (
+				BD9FF7D8276FCBEF002A4FA0 /* RepositoryCoordinatorSpy.swift */,
+			);
+			path = Spy;
+			sourceTree = "<group>";
+		};
+		BD9FF7DE276FCC78002A4FA0 /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				BD9FF7DF276FCC9E002A4FA0 /* PullRequestListProviderStub.swift */,
+			);
+			path = Stub;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -682,6 +755,9 @@
 				BD9FF7B3276FC874002A4FA0 /* RepositoryCoordinatorTestCase.swift in Sources */,
 				BD8F9C13276F6F18002BD084 /* RepositoryRequestTests.swift in Sources */,
 				BD9FF7BC276FC952002A4FA0 /* RepositoryCoordinatorTests.swift in Sources */,
+				BD9FF7D9276FCBEF002A4FA0 /* RepositoryCoordinatorSpy.swift in Sources */,
+				BD9FF7C9276FCB2A002A4FA0 /* PullRequestListViewControllerTests.swift in Sources */,
+				BD9FF7E0276FCC9E002A4FA0 /* PullRequestListProviderStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

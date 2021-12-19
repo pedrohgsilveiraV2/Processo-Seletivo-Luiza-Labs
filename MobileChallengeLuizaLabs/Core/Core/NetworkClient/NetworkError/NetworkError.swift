@@ -23,7 +23,7 @@ public struct NetworkError: RequestError {
         self.type = type
     }
 
-    init(statusCode: Int) {
+    public init(statusCode: Int) {
         self.statusCode = StatusCode(rawValue: statusCode)
         self.type = NetworkErrorType(rawValue: StatusCode(rawValue: statusCode))
     }
