@@ -27,6 +27,8 @@
 		BD9FF734276F8529002A4FA0 /* RepositoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF733276F8529002A4FA0 /* RepositoryCoordinator.swift */; };
 		BD9FF755276F9E82002A4FA0 /* PullRequestCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF754276F9E82002A4FA0 /* PullRequestCredentials.swift */; };
 		BD9FF75B276F9FCB002A4FA0 /* PullRequestListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF75A276F9FCB002A4FA0 /* PullRequestListResponse.swift */; };
+		BD9FF762276FA188002A4FA0 /* PullRequestListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF761276FA188002A4FA0 /* PullRequestListProvider.swift */; };
+		BD9FF768276FA1B8002A4FA0 /* PullRequestListProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF767276FA1B8002A4FA0 /* PullRequestListProviderProtocol.swift */; };
 		E921F1E3A9D22B09D55D7F08 /* Pods_Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE48E846E57D7F6B398CA7F /* Pods_Repository.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +70,8 @@
 		BD9FF733276F8529002A4FA0 /* RepositoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCoordinator.swift; sourceTree = "<group>"; };
 		BD9FF754276F9E82002A4FA0 /* PullRequestCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestCredentials.swift; sourceTree = "<group>"; };
 		BD9FF75A276F9FCB002A4FA0 /* PullRequestListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestListResponse.swift; sourceTree = "<group>"; };
+		BD9FF761276FA188002A4FA0 /* PullRequestListProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestListProvider.swift; sourceTree = "<group>"; };
+		BD9FF767276FA1B8002A4FA0 /* PullRequestListProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestListProviderProtocol.swift; sourceTree = "<group>"; };
 		DBA6995437CC3BF47247039D /* Pods-RepositoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepositoryTests.debug.xcconfig"; path = "Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -318,6 +322,8 @@
 		BD9FF750276F99E5002A4FA0 /* Provider */ = {
 			isa = PBXGroup;
 			children = (
+				BD9FF760276FA17A002A4FA0 /* Abstraction */,
+				BD9FF761276FA188002A4FA0 /* PullRequestListProvider.swift */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -327,6 +333,14 @@
 			children = (
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		BD9FF760276FA17A002A4FA0 /* Abstraction */ = {
+			isa = PBXGroup;
+			children = (
+				BD9FF767276FA1B8002A4FA0 /* PullRequestListProviderProtocol.swift */,
+			);
+			path = Abstraction;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -526,6 +540,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD9FF722276F7C07002A4FA0 /* RepositoryListProviderProtocol.swift in Sources */,
+				BD9FF762276FA188002A4FA0 /* PullRequestListProvider.swift in Sources */,
 				BD9FF715276F7966002A4FA0 /* RepositoryListView.swift in Sources */,
 				BD9FF734276F8529002A4FA0 /* RepositoryCoordinator.swift in Sources */,
 				BD9FF755276F9E82002A4FA0 /* PullRequestCredentials.swift in Sources */,
@@ -536,6 +551,7 @@
 				BD9FF726276F7C94002A4FA0 /* RepositoryListState.swift in Sources */,
 				BD8F9C00276F6C86002BD084 /* RepositoryRequest.swift in Sources */,
 				BD9FF705276F7723002A4FA0 /* RepositoryService.swift in Sources */,
+				BD9FF768276FA1B8002A4FA0 /* PullRequestListProviderProtocol.swift in Sources */,
 				BD9FF70A276F78BA002A4FA0 /* RepositoryServiceProtocol.swift in Sources */,
 				BD9FF71C276F7BC1002A4FA0 /* RepositoryListProvider.swift in Sources */,
 			);
