@@ -18,7 +18,7 @@ struct RepositoyOwner: Codable {
     }
 }
 
-struct RepositoyListResponse: Codable {
+struct RepositoyItemResponse: Codable {
 
     var name: String
 
@@ -37,4 +37,8 @@ struct RepositoyListResponse: Codable {
         case stargazersCount = "stargazers_count"
         case forksCount = "forks_count"
     }
+}
+
+struct RepositoyListResponse: Codable {
+    var items: [RepositoyItemResponse]
 }

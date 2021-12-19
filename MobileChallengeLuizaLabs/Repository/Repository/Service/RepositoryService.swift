@@ -15,9 +15,9 @@ struct RepositoryService: RepositoryServiceProtocol {
         self.client = client
     }
 
-    func fetchRepositories(currentPage: Int, _ completion: @escaping (Result<[RepositoyListResponse], NetworkError>) -> Void) {
+    func fetchRepositories(currentPage: Int, _ completion: @escaping (Result<RepositoyListResponse, NetworkError>) -> Void) {
         let requestBuilder = URLRequestBuilder(from: RepositoryRequest.fetchRepositories(currentPage: currentPage))
 
-        client.request(requestBuilder: requestBuilder, responseType: [RepositoyListResponse].self, completion: completion)
+        client.request(requestBuilder: requestBuilder, responseType: RepositoyListResponse.self, completion: completion)
     }
 }

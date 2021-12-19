@@ -8,5 +8,5 @@
 import Core
 
 protocol RepositoryServiceProtocol {
-    func fetchRepositories(currentPage: Int, _ completion: @escaping (Result<[RepositoyListResponse], NetworkError>) -> Void)
+    func fetchRepositories(currentPage: Int, _ completion: @escaping (Result<RepositoyListResponse, NetworkError>) -> Void)
 }

@@ -23,6 +23,8 @@ final class RepositoryListViewController: UIViewController {
         return view
     }()
 
+    private var didFinishRequest: Bool = true
+
     // MARK: - Life Cycle
     init(provider: RepositoryListProviderProtocol = RepositoryListProvider()) {
         self.provider = provider
@@ -51,6 +53,7 @@ extension RepositoryListViewController {
         guard let command = state.handleEvent(event: .didEndScroll) else { return }
 
         if case .updateValues(let page) = command {
+            didFinishRequest = false
             fetchRepositories(with: page)
         }
     }
@@ -66,9 +69,8 @@ extension RepositoryListViewController {
 
             switch result {
             case .success(let repositories):
-                self.stopLoading()
 
-                let viewModels: [EndlessScrollTableViewCellViewModel] = repositories.map {
+                let viewModels: [EndlessScrollTableViewCellViewModel] = repositories.items.map {
 
                     let imageURL = URL(string: $0.owner.ownerProfileAvatarPath)
 
@@ -82,8 +84,11 @@ extension RepositoryListViewController {
                     return EndlessScrollTableViewCellViewModel(repositoryName: $0.name, repositoryDescription: $0.description, forkScore: $0.forksCount, starScore: $0.stargazersCount, userName: $0.owner.ownerName, profileImage: UIImage())
                 }
 
+                self.stopLoading()
                 self.mainView.updateRepositoryContent(with: viewModels)
-            case .failure:
+                self.didFinishRequest = true
+            case .failure(let error):
+                debugPrint(error)
                 break
             }
         }
@@ -97,6 +102,8 @@ extension RepositoryListViewController: RepositoryListViewDelegate {
     }
 
     func didEndScroll() {
-
+        if didFinishRequest {
+            handleState()
+        }
     }
 }

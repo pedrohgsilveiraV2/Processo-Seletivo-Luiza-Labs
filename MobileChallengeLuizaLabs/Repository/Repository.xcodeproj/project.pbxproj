@@ -24,6 +24,7 @@
 		BD9FF722276F7C07002A4FA0 /* RepositoryListProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF721276F7C07002A4FA0 /* RepositoryListProviderProtocol.swift */; };
 		BD9FF726276F7C94002A4FA0 /* RepositoryListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF725276F7C94002A4FA0 /* RepositoryListState.swift */; };
 		BD9FF72F276F7F0B002A4FA0 /* RepositoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF72E276F7F0B002A4FA0 /* RepositoryListViewController.swift */; };
+		BD9FF734276F8529002A4FA0 /* RepositoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF733276F8529002A4FA0 /* RepositoryCoordinator.swift */; };
 		E921F1E3A9D22B09D55D7F08 /* Pods_Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE48E846E57D7F6B398CA7F /* Pods_Repository.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		BD9FF721276F7C07002A4FA0 /* RepositoryListProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListProviderProtocol.swift; sourceTree = "<group>"; };
 		BD9FF725276F7C94002A4FA0 /* RepositoryListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListState.swift; sourceTree = "<group>"; };
 		BD9FF72E276F7F0B002A4FA0 /* RepositoryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListViewController.swift; sourceTree = "<group>"; };
+		BD9FF733276F8529002A4FA0 /* RepositoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCoordinator.swift; sourceTree = "<group>"; };
 		DBA6995437CC3BF47247039D /* Pods-RepositoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepositoryTests.debug.xcconfig"; path = "Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +136,7 @@
 		BD8F9B8B276F68B4002BD084 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				BD9FF732276F8518002A4FA0 /* Coordinator */,
 				BD8F9BC1276F6A2E002BD084 /* Resources */,
 				BD8F9BF8276F6BF9002BD084 /* Screens */,
 				BD8F9BF9276F6C15002BD084 /* Service */,
@@ -278,6 +281,14 @@
 				BD9FF721276F7C07002A4FA0 /* RepositoryListProviderProtocol.swift */,
 			);
 			path = Abstraction;
+			sourceTree = "<group>";
+		};
+		BD9FF732276F8518002A4FA0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				BD9FF733276F8529002A4FA0 /* RepositoryCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,6 +489,7 @@
 			files = (
 				BD9FF722276F7C07002A4FA0 /* RepositoryListProviderProtocol.swift in Sources */,
 				BD9FF715276F7966002A4FA0 /* RepositoryListView.swift in Sources */,
+				BD9FF734276F8529002A4FA0 /* RepositoryCoordinator.swift in Sources */,
 				BD8F9BCA276F6A72002BD084 /* RepositoryStringConstants.swift in Sources */,
 				BD9FF701276F74D9002A4FA0 /* RepositoyListResponse.swift in Sources */,
 				BD9FF72F276F7F0B002A4FA0 /* RepositoryListViewController.swift in Sources */,
