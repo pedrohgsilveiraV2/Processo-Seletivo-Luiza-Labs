@@ -22,7 +22,7 @@ final class EndlessScrollTableViewDelegate: NSObject, UITableViewDelegate {
     }
 
     enum Constants {
-        static let rowHeight: CGFloat = 60
+        static let rowHeight: CGFloat = 160
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

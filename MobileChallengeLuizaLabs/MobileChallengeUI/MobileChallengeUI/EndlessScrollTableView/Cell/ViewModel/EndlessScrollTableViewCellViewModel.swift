@@ -7,11 +7,17 @@
 
 import UIKit
 
-public protocol EndlessScrollTableViewCellViewModel: Hashable {
-    var repositoryName: String { get }
-    var repositoryDescription: String { get }
-    var forkScore: Int { get }
-    var starScore: Int { get }
-    var userName: String { get }
-    var profileImage: UIImage { get }
+public struct EndlessScrollTableViewCellViewModel: Hashable {
+
+    public var repositoryName: String
+
+    public var repositoryDescription: String
+
+    public var forkScore: Int
+
+    public var starScore: Int
+
+    public var userName: String
+
+    public var profileImage: UIImage
 }

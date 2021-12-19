@@ -10,6 +10,10 @@ import Core
 
 final class EndlessScrollTableViewCell: UITableViewCell {
 
+    static var identifier: String {
+        return String(describing: self)
+    }
+
     private var repositoryNameLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 16)
@@ -44,7 +48,7 @@ final class EndlessScrollTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func setupCell<ViewModel: EndlessScrollTableViewCellViewModel>(with viewModel: ViewModel) {
+    func setupCell(with viewModel: EndlessScrollTableViewCellViewModel) {
         let profileViewModel = UserProfileViewModel(userImage: viewModel.profileImage, userName: viewModel.userName)
 
         repositoryNameLabel.text = viewModel.repositoryName
@@ -92,6 +96,7 @@ extension EndlessScrollTableViewCell: ViewCodable {
             make.leading.equalTo(repositoryDescriptionLabel.snp.trailing).offset(32)
             make.trailing.equalTo(contentView.snp.trailing).offset(-16)
             make.bottom.equalTo(contentView.snp.bottom).offset(-24)
+            make.width.greaterThanOrEqualTo(80)
         }
     }
 
