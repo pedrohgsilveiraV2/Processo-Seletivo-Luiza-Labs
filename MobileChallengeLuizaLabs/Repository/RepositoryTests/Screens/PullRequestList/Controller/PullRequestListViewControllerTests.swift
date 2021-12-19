@@ -54,7 +54,7 @@ final class PullRequestListViewControllerTests: QuickSpec {
                 }
 
                 it("Should have expected layout") {
-                    expect(sut) == recordSnapshot()
+                    expect(sut) == snapshot()
                 }
             }
 

@@ -4,3 +4,6 @@
 //
 //  Created by pedro.silveira on 19/12/21.
 //
+
+// MARK: - Pull Request List ViewController
+"PULL_REQUEST_LIST_VIEW_CONTROLLER_TITLE" = "Lista de Pull Requests";

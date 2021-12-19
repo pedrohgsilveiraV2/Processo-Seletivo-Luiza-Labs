@@ -48,6 +48,8 @@ final class PullRequestListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.title = L10n.pullRequestListViewControllerTitle
+
         fetchRepositories()
     }
 }
