@@ -39,7 +39,7 @@ final class ScoreItemView: UIView {
         label.font = UIFont.systemFont(ofSize: 14)
         label.textColor = .black
         label.numberOfLines = 0
-        label.text = type.value
+        label.text = String(scoreCount)
 
         return label
     }()
@@ -76,7 +76,7 @@ extension ScoreItemView: ViewCodable {
         scoreLabel.snp.makeConstraints { make in
             make.top.equalTo(snp.top).offset(4)
             make.trailing.bottom.equalToSuperview()
-            make.leading.equalTo(scoreTypeLabel.snp.right).offset(2)
+            make.leading.equalTo(scoreTypeLabel.snp.trailing).offset(2)
         }
     }
 }
