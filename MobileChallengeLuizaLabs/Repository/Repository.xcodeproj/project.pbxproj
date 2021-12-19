@@ -34,6 +34,7 @@
 		BD9FF77C276FA394002A4FA0 /* PullRequestListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF77B276FA394002A4FA0 /* PullRequestListTableViewCell.swift */; };
 		BD9FF782276FA3A8002A4FA0 /* PullRequestListTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF781276FA3A8002A4FA0 /* PullRequestListTableViewCellViewModel.swift */; };
 		BD9FF786276FA80C002A4FA0 /* PullRequestListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF785276FA80C002A4FA0 /* PullRequestListView.swift */; };
+		BD9FF78A276FA8BB002A4FA0 /* PullRequestListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF789276FA8BB002A4FA0 /* PullRequestListViewController.swift */; };
 		E921F1E3A9D22B09D55D7F08 /* Pods_Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE48E846E57D7F6B398CA7F /* Pods_Repository.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		BD9FF77B276FA394002A4FA0 /* PullRequestListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestListTableViewCell.swift; sourceTree = "<group>"; };
 		BD9FF781276FA3A8002A4FA0 /* PullRequestListTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestListTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		BD9FF785276FA80C002A4FA0 /* PullRequestListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestListView.swift; sourceTree = "<group>"; };
+		BD9FF789276FA8BB002A4FA0 /* PullRequestListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestListViewController.swift; sourceTree = "<group>"; };
 		DBA6995437CC3BF47247039D /* Pods-RepositoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepositoryTests.debug.xcconfig"; path = "Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -343,6 +345,7 @@
 		BD9FF751276F99EA002A4FA0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BD9FF789276FA8BB002A4FA0 /* PullRequestListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -587,6 +590,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD9FF722276F7C07002A4FA0 /* RepositoryListProviderProtocol.swift in Sources */,
+				BD9FF78A276FA8BB002A4FA0 /* PullRequestListViewController.swift in Sources */,
 				BD9FF762276FA188002A4FA0 /* PullRequestListProvider.swift in Sources */,
 				BD9FF782276FA3A8002A4FA0 /* PullRequestListTableViewCellViewModel.swift in Sources */,
 				BD9FF715276F7966002A4FA0 /* RepositoryListView.swift in Sources */,
