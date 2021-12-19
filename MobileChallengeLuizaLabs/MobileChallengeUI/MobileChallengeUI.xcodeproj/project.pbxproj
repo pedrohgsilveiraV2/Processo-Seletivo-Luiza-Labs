@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,15 @@
 		BD8F9A46276D95D2002BD084 /* MobileChallengeUI.strings in Resources */ = {isa = PBXBuildFile; fileRef = BD8F9A45276D95D2002BD084 /* MobileChallengeUI.strings */; };
 		BD8F9A4D276D9600002BD084 /* MobileChallengeUIStringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9A4C276D9600002BD084 /* MobileChallengeUIStringConstants.swift */; };
 		BD8F9B18276E58DD002BD084 /* EndlessScrollTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9B17276E58DD002BD084 /* EndlessScrollTableViewDelegate.swift */; };
+		BD8F9B1E276E610B002BD084 /* EndlessScrollTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9B1D276E610B002BD084 /* EndlessScrollTableViewDataSource.swift */; };
+		BD8F9B25276EBDAF002BD084 /* EndlessScrollTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9B24276EBDAF002BD084 /* EndlessScrollTableView.swift */; };
+		BD8F9B33276EBEAD002BD084 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8F9B32276EBEAD002BD084 /* Core.framework */; };
+		BD8F9B38276EBECB002BD084 /* EndlessScrollTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9B37276EBECB002BD084 /* EndlessScrollTableViewCell.swift */; };
+		BD8F9B3F276EC2C8002BD084 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9B3E276EC2C8002BD084 /* UserProfileView.swift */; };
+		BD8F9B46276EC391002BD084 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9B45276EC391002BD084 /* UserProfileViewModel.swift */; };
+		BD8F9B4F276EC4E4002BD084 /* UserProfileViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9B4E276EC4E4002BD084 /* UserProfileViewTests.swift */; };
+		BD8F9B57276EC7C5002BD084 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BD8F9B56276EC7C5002BD084 /* SnapKit */; };
+		BD8F9B5B276EC809002BD084 /* ScoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9B5A276EC809002BD084 /* ScoreItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +49,14 @@
 		BD8F9A45276D95D2002BD084 /* MobileChallengeUI.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = MobileChallengeUI.strings; sourceTree = "<group>"; };
 		BD8F9A4C276D9600002BD084 /* MobileChallengeUIStringConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileChallengeUIStringConstants.swift; sourceTree = "<group>"; };
 		BD8F9B17276E58DD002BD084 /* EndlessScrollTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndlessScrollTableViewDelegate.swift; sourceTree = "<group>"; };
+		BD8F9B1D276E610B002BD084 /* EndlessScrollTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndlessScrollTableViewDataSource.swift; sourceTree = "<group>"; };
+		BD8F9B24276EBDAF002BD084 /* EndlessScrollTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndlessScrollTableView.swift; sourceTree = "<group>"; };
+		BD8F9B32276EBEAD002BD084 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD8F9B37276EBECB002BD084 /* EndlessScrollTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndlessScrollTableViewCell.swift; sourceTree = "<group>"; };
+		BD8F9B3E276EC2C8002BD084 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		BD8F9B45276EC391002BD084 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
+		BD8F9B4E276EC4E4002BD084 /* UserProfileViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewTests.swift; sourceTree = "<group>"; };
+		BD8F9B5A276EC809002BD084 /* ScoreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreItem.swift; sourceTree = "<group>"; };
 		EFC6CDD44B3EB5A63B79B3D2 /* Pods_MobileChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -48,7 +65,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD8F9B57276EC7C5002BD084 /* SnapKit in Frameworks */,
 				BB99664461BF30B4C578A780 /* Pods_MobileChallengeUI.framework in Frameworks */,
+				BD8F9B33276EBEAD002BD084 /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +130,7 @@
 		BD8F99C3276D8230002BD084 /* MobileChallengeUITests */ = {
 			isa = PBXGroup;
 			children = (
+				BD8F9B4B276EC4C7002BD084 /* EndlessScrollTableView */,
 				BD8F99C6276D8230002BD084 /* Info.plist */,
 			);
 			path = MobileChallengeUITests;
@@ -135,8 +155,10 @@
 		BD8F9B14276E58B1002BD084 /* EndlessScrollTableView */ = {
 			isa = PBXGroup;
 			children = (
+				BD8F9B28276EBE50002BD084 /* Cell */,
 				BD8F9B16276E58D1002BD084 /* DataSource */,
 				BD8F9B15276E58C9002BD084 /* Delegate */,
+				BD8F9B24276EBDAF002BD084 /* EndlessScrollTableView.swift */,
 			);
 			path = EndlessScrollTableView;
 			sourceTree = "<group>";
@@ -152,13 +174,66 @@
 		BD8F9B16276E58D1002BD084 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				BD8F9B1D276E610B002BD084 /* EndlessScrollTableViewDataSource.swift */,
 			);
 			path = DataSource;
+			sourceTree = "<group>";
+		};
+		BD8F9B28276EBE50002BD084 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F9B3D276EC296002BD084 /* Subviews */,
+				BD8F9B37276EBECB002BD084 /* EndlessScrollTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BD8F9B3D276EC296002BD084 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F9B44276EC384002BD084 /* ViewModel */,
+				BD8F9B3E276EC2C8002BD084 /* UserProfileView.swift */,
+				BD8F9B5A276EC809002BD084 /* ScoreItem.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		BD8F9B44276EC384002BD084 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F9B45276EC391002BD084 /* UserProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BD8F9B4B276EC4C7002BD084 /* EndlessScrollTableView */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F9B4C276EC4CD002BD084 /* Cell */,
+			);
+			path = EndlessScrollTableView;
+			sourceTree = "<group>";
+		};
+		BD8F9B4C276EC4CD002BD084 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F9B4D276EC4D3002BD084 /* Subviews */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BD8F9B4D276EC4D3002BD084 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F9B4E276EC4E4002BD084 /* UserProfileViewTests.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 		CC8425834D247D8E423E22E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BD8F9B32276EBEAD002BD084 /* Core.framework */,
 				AEA804EC943BF6D4B320B9BD /* Pods_MobileChallengeUI.framework */,
 				EFC6CDD44B3EB5A63B79B3D2 /* Pods_MobileChallengeUITests.framework */,
 			);
@@ -195,6 +270,9 @@
 			dependencies = (
 			);
 			name = MobileChallengeUI;
+			packageProductDependencies = (
+				BD8F9B56276EC7C5002BD084 /* SnapKit */,
+			);
 			productName = MobileChallengeUI;
 			productReference = BD8F99B6276D8230002BD084 /* MobileChallengeUI.framework */;
 			productType = "com.apple.product-type.framework";
@@ -234,6 +312,7 @@
 					};
 					BD8F99BE276D8230002BD084 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -246,6 +325,9 @@
 				Base,
 			);
 			mainGroup = BD8F99AC276D8230002BD084;
+			packageReferences = (
+				BD8F9B55276EC7C5002BD084 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = BD8F99B7276D8230002BD084 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -361,8 +443,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD8F9B1E276E610B002BD084 /* EndlessScrollTableViewDataSource.swift in Sources */,
+				BD8F9B3F276EC2C8002BD084 /* UserProfileView.swift in Sources */,
 				BD8F9B18276E58DD002BD084 /* EndlessScrollTableViewDelegate.swift in Sources */,
+				BD8F9B46276EC391002BD084 /* UserProfileViewModel.swift in Sources */,
 				BD8F9A4D276D9600002BD084 /* MobileChallengeUIStringConstants.swift in Sources */,
+				BD8F9B5B276EC809002BD084 /* ScoreItem.swift in Sources */,
+				BD8F9B25276EBDAF002BD084 /* EndlessScrollTableView.swift in Sources */,
+				BD8F9B38276EBECB002BD084 /* EndlessScrollTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +458,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD8F9B4F276EC4E4002BD084 /* UserProfileViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,6 +655,7 @@
 			baseConfigurationReference = 2967AEDE808A8A6C86E9C894 /* Pods-MobileChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MobileChallengeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -575,6 +665,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = pedrohgsilveira.MobileChallengeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -585,6 +676,7 @@
 			baseConfigurationReference = 5F098D09E331664D74B76450 /* Pods-MobileChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MobileChallengeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -630,6 +722,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BD8F9B55276EC7C5002BD084 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BD8F9B56276EC7C5002BD084 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD8F9B55276EC7C5002BD084 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BD8F99AD276D8230002BD084 /* Project object */;
 }
