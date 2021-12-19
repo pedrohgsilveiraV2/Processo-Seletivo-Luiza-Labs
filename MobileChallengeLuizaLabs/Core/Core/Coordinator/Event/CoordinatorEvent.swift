@@ -5,7 +5,7 @@
 //  Created by pedro.silveira on 17/12/21.
 //
 
-public struct CoordinatorEventType: Hashable {
+public final class CoordinatorEventType: Hashable {
 
     typealias CoordinatorType = CoordinatorEvent.Type
 

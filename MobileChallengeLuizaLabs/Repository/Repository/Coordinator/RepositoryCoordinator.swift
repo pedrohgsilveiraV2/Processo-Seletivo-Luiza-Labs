@@ -16,13 +16,32 @@ public final class RepositoryCoordinator: Coordinator {
         self.rootViewController = rootViewController
 
         super.init()
+
+        register(eventType: RepositoryCoordinatorEvents.self) { [weak self] in self?.handle($0) }
     }
 
     public override func start(_ completion: (() -> Void)?) {
         let repositoryListViewController = RepositoryListViewController()
 
-        rootViewController.pushViewController(repositoryListViewController, animated: true)
+        repositoryListViewController.coordinator = self
 
-        repositoryListViewController.beginAppearanceTransition(true, animated: true)
+        rootViewController.pushViewController(repositoryListViewController, animated: true)
+    }
+
+    private func goToPullRequestListViewController(with credentials: PullRequestCredentials) {
+        let pullRequestListViewController = PullRequestListViewController(credentials: credentials)
+
+        pullRequestListViewController.coordinator = self
+
+        rootViewController.pushViewController(pullRequestListViewController, animated: true)
+    }
+}
+
+private extension RepositoryCoordinator {
+    func handle(_ event: RepositoryCoordinatorEvents) {
+        switch event {
+        case .goToPullRequestListViewController(let credentials):
+            goToPullRequestListViewController(with: credentials)
+        }
     }
 }

@@ -12,6 +12,8 @@ import MobileChallengeUI
 final class RepositoryListViewController: UIViewController {
 
     // MARK: - Properties
+    var coordinator: CoordinatorProtocol?
+
     private let provider: RepositoryListProviderProtocol
 
     private var state: RepositoryListState = .initialState
@@ -106,7 +108,9 @@ extension RepositoryListViewController {
 // MARK: - Repository List View Delegate Methods
 extension RepositoryListViewController: RepositoryListViewDelegate {
     func didSelectRow(at indexPath: IndexPath) {
-        return
+        let credential = credentials[indexPath.row]
+
+        coordinator?.handle(RepositoryCoordinatorEvents.goToPullRequestListViewController(with: credential))
     }
 
     func didEndScroll() {

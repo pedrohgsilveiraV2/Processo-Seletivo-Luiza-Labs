@@ -12,6 +12,8 @@ import MobileChallengeUI
 final class PullRequestListViewController: UIViewController {
 
     // MARK: - Properties
+    var coordinator: CoordinatorProtocol?
+
     private let provider: PullRequestListProviderProtocol
 
     private let credentials: PullRequestCredentials
