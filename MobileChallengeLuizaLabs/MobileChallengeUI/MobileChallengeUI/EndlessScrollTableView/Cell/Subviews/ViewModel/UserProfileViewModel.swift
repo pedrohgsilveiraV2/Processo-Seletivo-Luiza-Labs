@@ -10,5 +10,4 @@ import UIKit
 struct UserProfileViewModel {
     var userImage: UIImage
     var userName: String
-    var userFullName: String
 }

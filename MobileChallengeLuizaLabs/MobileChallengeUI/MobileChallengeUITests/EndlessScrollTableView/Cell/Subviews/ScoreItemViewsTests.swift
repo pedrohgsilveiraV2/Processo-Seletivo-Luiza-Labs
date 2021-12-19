@@ -22,7 +22,10 @@ final class ScoreItemViewTests: QuickSpec {
             context("When initialized with fork as value") {
 
                 beforeEach {
-                    sut = ScoreItemView(type: .fork, scoreCount: 100)
+                    sut = ScoreItemView(type: .fork)
+
+                    sut.update(with: 100)
+
                     sut.frame = .init(x: 0, y: 0, width: 60, height: 22)
                 }
 
@@ -34,7 +37,10 @@ final class ScoreItemViewTests: QuickSpec {
             context("When initialized with star as value") {
 
                 beforeEach {
-                    sut = ScoreItemView(type: .star, scoreCount: 100)
+                    sut = ScoreItemView(type: .star)
+
+                    sut.update(with: 100)
+
                     sut.frame = .init(x: 0, y: 0, width: 60, height: 22)
                 }
 

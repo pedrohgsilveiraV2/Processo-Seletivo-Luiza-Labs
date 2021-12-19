@@ -22,8 +22,6 @@ final class ScoreItemView: UIView {
 
     private var type: ScoreItemType
 
-    private var scoreCount: Int
-
     private lazy var scoreTypeLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14)
@@ -39,15 +37,13 @@ final class ScoreItemView: UIView {
         label.font = UIFont.systemFont(ofSize: 14)
         label.textColor = .black
         label.numberOfLines = 0
-        label.text = String(scoreCount)
 
         return label
     }()
 
 
-    init(type: ScoreItemType, scoreCount: Int, frame: CGRect = .zero) {
+    init(type: ScoreItemType, frame: CGRect = .zero) {
         self.type = type
-        self.scoreCount = scoreCount
 
         super.init(frame: frame)
 
@@ -59,6 +55,9 @@ final class ScoreItemView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
+    func update(with score: Int) {
+        scoreLabel.text = String(score)
+    }
 }
 
 extension ScoreItemView: ViewCodable {

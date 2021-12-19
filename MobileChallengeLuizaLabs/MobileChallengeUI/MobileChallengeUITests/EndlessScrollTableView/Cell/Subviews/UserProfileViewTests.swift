@@ -23,11 +23,13 @@ final class UserProfileViewTests: QuickSpec {
 
                 beforeEach {
                     let viewModel = UserProfileViewModel(userImage: UIImage.init(systemName: "circle") ?? UIImage(),
-                                                         userName: "some user name",
-                                                         userFullName: "some full name")
+                                                         userName: "some user name")
 
-                    sut = UserProfileView(viewModel: viewModel)
-                    sut.frame = .init(x: 0, y: 0, width: 200, height: 240)
+                    sut = UserProfileView()
+
+                    sut.updateValues(with: viewModel)
+
+                    sut.frame = .init(x: 0, y: 0, width: 140, height: 120)
                 }
 
                 it("Should have expected layout") {

@@ -24,6 +24,7 @@
 		BD8F9B57276EC7C5002BD084 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BD8F9B56276EC7C5002BD084 /* SnapKit */; };
 		BD8F9B5B276EC809002BD084 /* ScoreItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9B5A276EC809002BD084 /* ScoreItem.swift */; };
 		BD8F9B5F276ECC2F002BD084 /* ScoreItemViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9B5E276ECC2F002BD084 /* ScoreItemViewsTests.swift */; };
+		BD8F9B64276ED179002BD084 /* EndlessScrollTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9B63276ED179002BD084 /* EndlessScrollTableViewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		BD8F9B4E276EC4E4002BD084 /* UserProfileViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewTests.swift; sourceTree = "<group>"; };
 		BD8F9B5A276EC809002BD084 /* ScoreItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreItem.swift; sourceTree = "<group>"; };
 		BD8F9B5E276ECC2F002BD084 /* ScoreItemViewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreItemViewsTests.swift; sourceTree = "<group>"; };
+		BD8F9B63276ED179002BD084 /* EndlessScrollTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndlessScrollTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		EFC6CDD44B3EB5A63B79B3D2 /* Pods_MobileChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -184,6 +186,7 @@
 		BD8F9B28276EBE50002BD084 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				BD8F9B62276ED168002BD084 /* ViewModel */,
 				BD8F9B3D276EC296002BD084 /* Subviews */,
 				BD8F9B37276EBECB002BD084 /* EndlessScrollTableViewCell.swift */,
 			);
@@ -231,6 +234,14 @@
 				BD8F9B5E276ECC2F002BD084 /* ScoreItemViewsTests.swift */,
 			);
 			path = Subviews;
+			sourceTree = "<group>";
+		};
+		BD8F9B62276ED168002BD084 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BD8F9B63276ED179002BD084 /* EndlessScrollTableViewCellViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		CC8425834D247D8E423E22E7 /* Frameworks */ = {
@@ -447,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD8F9B1E276E610B002BD084 /* EndlessScrollTableViewDataSource.swift in Sources */,
+				BD8F9B64276ED179002BD084 /* EndlessScrollTableViewCellViewModel.swift in Sources */,
 				BD8F9B3F276EC2C8002BD084 /* UserProfileView.swift in Sources */,
 				BD8F9B18276E58DD002BD084 /* EndlessScrollTableViewDelegate.swift in Sources */,
 				BD8F9B46276EC391002BD084 /* UserProfileViewModel.swift in Sources */,

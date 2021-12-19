@@ -10,12 +10,9 @@ import Core
 
 final class UserProfileView: UIStackView {
 
-    private let viewModel: UserProfileViewModel
-
     private lazy var profileImageView: UIImageView = {
         let view = UIImageView()
         view.contentMode = .scaleAspectFit
-        view.image = viewModel.userImage
 
         return view
     }()
@@ -26,25 +23,11 @@ final class UserProfileView: UIStackView {
         label.textColor = .blue
         label.numberOfLines = 0
         label.textAlignment = .center
-        label.text = viewModel.userName
 
         return label
     }()
 
-    private lazy var userFullNameLabel: UILabel = {
-        let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 14)
-        label.textColor = .black
-        label.numberOfLines = 0
-        label.textAlignment = .center
-        label.text = viewModel.userFullName
-
-        return label
-    }()
-
-
-    init(viewModel: UserProfileViewModel, frame: CGRect = .zero) {
-        self.viewModel = viewModel
+    override init(frame: CGRect = .zero) {
 
         super.init(frame: frame)
 
@@ -55,13 +38,17 @@ final class UserProfileView: UIStackView {
     required init(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
+    func updateValues(with viewModel: UserProfileViewModel) {
+        profileImageView.image = viewModel.userImage
+        userNameLabel.text = viewModel.userName
+    }
 }
 
 extension UserProfileView: ViewCodable {
     func buildViewHierarchy() {
         addArrangedSubview(profileImageView)
         addArrangedSubview(userNameLabel)
-        addArrangedSubview(userFullNameLabel)
     }
 
     func setupConstraints() { }
