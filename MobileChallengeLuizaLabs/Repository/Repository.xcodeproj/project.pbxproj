@@ -31,6 +31,8 @@
 		BD9FF768276FA1B8002A4FA0 /* PullRequestListProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF767276FA1B8002A4FA0 /* PullRequestListProviderProtocol.swift */; };
 		BD9FF76D276FA304002A4FA0 /* PullRequestListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF76C276FA304002A4FA0 /* PullRequestListTableView.swift */; };
 		BD9FF775276FA336002A4FA0 /* PullRequestListTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF774276FA336002A4FA0 /* PullRequestListTableViewDelegate.swift */; };
+		BD9FF77C276FA394002A4FA0 /* PullRequestListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF77B276FA394002A4FA0 /* PullRequestListTableViewCell.swift */; };
+		BD9FF782276FA3A8002A4FA0 /* PullRequestListTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF781276FA3A8002A4FA0 /* PullRequestListTableViewCellViewModel.swift */; };
 		E921F1E3A9D22B09D55D7F08 /* Pods_Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FE48E846E57D7F6B398CA7F /* Pods_Repository.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +78,8 @@
 		BD9FF767276FA1B8002A4FA0 /* PullRequestListProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestListProviderProtocol.swift; sourceTree = "<group>"; };
 		BD9FF76C276FA304002A4FA0 /* PullRequestListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestListTableView.swift; sourceTree = "<group>"; };
 		BD9FF774276FA336002A4FA0 /* PullRequestListTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestListTableViewDelegate.swift; sourceTree = "<group>"; };
+		BD9FF77B276FA394002A4FA0 /* PullRequestListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestListTableViewCell.swift; sourceTree = "<group>"; };
+		BD9FF781276FA3A8002A4FA0 /* PullRequestListTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequestListTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		DBA6995437CC3BF47247039D /* Pods-RepositoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepositoryTests.debug.xcconfig"; path = "Target Support Files/Pods-RepositoryTests/Pods-RepositoryTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -369,8 +373,18 @@
 		BD9FF773276FA31C002A4FA0 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				BD9FF77A276FA383002A4FA0 /* ViewModel */,
+				BD9FF77B276FA394002A4FA0 /* PullRequestListTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		BD9FF77A276FA383002A4FA0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BD9FF781276FA3A8002A4FA0 /* PullRequestListTableViewCellViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -571,8 +585,10 @@
 			files = (
 				BD9FF722276F7C07002A4FA0 /* RepositoryListProviderProtocol.swift in Sources */,
 				BD9FF762276FA188002A4FA0 /* PullRequestListProvider.swift in Sources */,
+				BD9FF782276FA3A8002A4FA0 /* PullRequestListTableViewCellViewModel.swift in Sources */,
 				BD9FF715276F7966002A4FA0 /* RepositoryListView.swift in Sources */,
 				BD9FF734276F8529002A4FA0 /* RepositoryCoordinator.swift in Sources */,
+				BD9FF77C276FA394002A4FA0 /* PullRequestListTableViewCell.swift in Sources */,
 				BD9FF775276FA336002A4FA0 /* PullRequestListTableViewDelegate.swift in Sources */,
 				BD9FF755276F9E82002A4FA0 /* PullRequestCredentials.swift in Sources */,
 				BD9FF75B276F9FCB002A4FA0 /* PullRequestListResponse.swift in Sources */,
