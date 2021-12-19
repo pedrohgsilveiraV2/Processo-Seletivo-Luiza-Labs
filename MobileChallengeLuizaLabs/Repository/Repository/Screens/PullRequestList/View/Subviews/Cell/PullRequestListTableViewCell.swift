@@ -79,6 +79,7 @@ extension PullRequestListTableViewCell: ViewCodable {
     func setupConstraints() {
         pullRequestTitleLabel.snp.makeConstraints { make in
             make.top.equalTo(contentView.snp.top).offset(24)
+            make.height.equalTo(18)
             make.leading.equalTo(contentView.snp.leading).offset(16)
             make.trailing.equalTo(contentView.snp.trailing).offset(-24)
         }
@@ -92,12 +93,15 @@ extension PullRequestListTableViewCell: ViewCodable {
         profileImageView.snp.makeConstraints { make in
             make.top.equalTo(pullRequestDescriptionLabel.snp.bottom).offset(6)
             make.leading.equalTo(contentView.snp.leading).offset(16)
+            make.width.equalTo(30)
+            make.height.equalTo(30)
             make.bottom.equalTo(contentView.snp.bottom).offset(-24)
         }
 
         userNameLabel.snp.makeConstraints { make in
             make.centerY.equalTo(profileImageView.snp.centerY)
             make.leading.equalTo(profileImageView.snp.trailing).offset(8)
+            make.height.equalTo(16)
         }
     }
 
