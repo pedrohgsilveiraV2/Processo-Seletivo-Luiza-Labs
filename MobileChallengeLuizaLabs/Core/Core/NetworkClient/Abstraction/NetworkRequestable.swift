@@ -11,5 +11,5 @@ public protocol NetworkRequestable {
 
     func request<T: Decodable>(requestBuilder: URLRequestBuilder,
                                responseType: T.Type,
-                               completion: @escaping (Result<T?, NetworkError>) -> Void)
+                               completion: @escaping (Result<T, NetworkError>) -> Void)
 }
