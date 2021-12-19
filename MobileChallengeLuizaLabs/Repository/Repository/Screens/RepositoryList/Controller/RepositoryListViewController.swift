@@ -97,9 +97,11 @@ extension RepositoryListViewController {
                 self.stopLoading()
                 self.mainView.updateRepositoryContent(with: viewModels)
                 self.didFinishRequest = true
-            case .failure(let error):
-                debugPrint(error)
-                break
+            case .failure:
+                self.stopLoading()
+                self.showErrorView { [weak self] in
+                    self?.fetchRepositories(with: page)
+                }
             }
         }
     }

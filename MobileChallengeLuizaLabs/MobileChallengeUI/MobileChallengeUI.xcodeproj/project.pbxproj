@@ -28,6 +28,7 @@
 		BD9FF72B276F7EBA002A4FA0 /* ActivityIndicatorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF72A276F7EBA002A4FA0 /* ActivityIndicatorExtension.swift */; };
 		BD9FF7E7276FCFCC002A4FA0 /* GenericErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF7E6276FCFCC002A4FA0 /* GenericErrorView.swift */; };
 		BD9FF7ED276FD269002A4FA0 /* UIViewController+ErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF7EC276FD269002A4FA0 /* UIViewController+ErrorExtension.swift */; };
+		BD9FF7F2276FD812002A4FA0 /* GenericLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF7F1276FD812002A4FA0 /* GenericLoaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		BD9FF72A276F7EBA002A4FA0 /* ActivityIndicatorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorExtension.swift; sourceTree = "<group>"; };
 		BD9FF7E6276FCFCC002A4FA0 /* GenericErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericErrorView.swift; sourceTree = "<group>"; };
 		BD9FF7EC276FD269002A4FA0 /* UIViewController+ErrorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ErrorExtension.swift"; sourceTree = "<group>"; };
+		BD9FF7F1276FD812002A4FA0 /* GenericLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericLoaderView.swift; sourceTree = "<group>"; };
 		EFC6CDD44B3EB5A63B79B3D2 /* Pods_MobileChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -130,6 +132,7 @@
 			children = (
 				BD9FF7E5276FCFBC002A4FA0 /* ErrorHandling */,
 				BD8F9B14276E58B1002BD084 /* EndlessScrollTableView */,
+				BD9FF7F0276FD801002A4FA0 /* GenericLoader */,
 				BD8F9A49276D95DA002BD084 /* Resources */,
 				BD8F9A44276D9594002BD084 /* StringConstants */,
 				BD9FF729276F7E99002A4FA0 /* UIViewController+Extension */,
@@ -259,6 +262,14 @@
 				BD9FF7E6276FCFCC002A4FA0 /* GenericErrorView.swift */,
 			);
 			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
+		BD9FF7F0276FD801002A4FA0 /* GenericLoader */ = {
+			isa = PBXGroup;
+			children = (
+				BD9FF7F1276FD812002A4FA0 /* GenericLoaderView.swift */,
+			);
+			path = GenericLoader;
 			sourceTree = "<group>";
 		};
 		CC8425834D247D8E423E22E7 /* Frameworks */ = {
@@ -479,6 +490,7 @@
 				BD8F9B3F276EC2C8002BD084 /* UserProfileView.swift in Sources */,
 				BD9FF7E7276FCFCC002A4FA0 /* GenericErrorView.swift in Sources */,
 				BD8F9B18276E58DD002BD084 /* EndlessScrollTableViewDelegate.swift in Sources */,
+				BD9FF7F2276FD812002A4FA0 /* GenericLoaderView.swift in Sources */,
 				BD8F9B46276EC391002BD084 /* UserProfileViewModel.swift in Sources */,
 				BD8F9A4D276D9600002BD084 /* MobileChallengeUIStringConstants.swift in Sources */,
 				BD9FF7ED276FD269002A4FA0 /* UIViewController+ErrorExtension.swift in Sources */,
