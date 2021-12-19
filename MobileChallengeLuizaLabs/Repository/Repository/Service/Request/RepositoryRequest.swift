@@ -9,6 +9,7 @@ import Core
 
 enum RepositoryRequest: HTTPRequest {
     case fetchRepositories(currentPage: Int)
+    case fetchPullRequest(credentials: PullRequestCredentials)
 }
 
 extension RepositoryRequest {
@@ -19,7 +20,7 @@ extension RepositoryRequest {
 
     var urlComponents: URLComponents {
         switch self {
-        case .fetchRepositories:
+        default:
             guard let components = URLComponents(string: Constants.baseURL) else {
                 return URLComponents()
             }
@@ -31,12 +32,16 @@ extension RepositoryRequest {
         switch self {
         case .fetchRepositories:
             return .get
+        case .fetchPullRequest:
+            return .get
         }
     }
 
     var headers: [String : String]? {
         switch self {
         case .fetchRepositories:
+            return nil
+        case .fetchPullRequest:
             return nil
         }
     }
@@ -45,6 +50,8 @@ extension RepositoryRequest {
         switch self {
         case .fetchRepositories:
             return nil
+        case .fetchPullRequest:
+            return nil
         }
     }
 
@@ -52,6 +59,8 @@ extension RepositoryRequest {
         switch self {
         case .fetchRepositories(let currentPage):
             return ["q": "language: Swift", "sort": "stars", "page": "\(currentPage)"]
+        case .fetchPullRequest:
+            return nil
         }
     }
 
@@ -59,7 +68,8 @@ extension RepositoryRequest {
         switch self {
         case .fetchRepositories:
             return ["/search", "repositories"]
+        case .fetchPullRequest(let credentials):
+            return ["/\(credentials.repoOwner)", credentials.repoName, "pulls"]
         }
     }
-
 }
