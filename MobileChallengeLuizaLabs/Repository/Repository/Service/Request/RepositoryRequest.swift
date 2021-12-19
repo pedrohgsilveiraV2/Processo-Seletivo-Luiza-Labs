@@ -69,7 +69,7 @@ extension RepositoryRequest {
         case .fetchRepositories:
             return ["/search", "repositories"]
         case .fetchPullRequest(let credentials):
-            return ["/\(credentials.repoOwner)", credentials.repoName, "pulls"]
+            return ["/repos", credentials.repoOwner, credentials.repoName, "pulls"]
         }
     }
 }
