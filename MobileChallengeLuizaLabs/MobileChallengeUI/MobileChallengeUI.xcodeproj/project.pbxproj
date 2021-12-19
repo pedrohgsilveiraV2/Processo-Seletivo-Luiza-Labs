@@ -25,6 +25,7 @@
 		BD8F9B64276ED179002BD084 /* EndlessScrollTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9B63276ED179002BD084 /* EndlessScrollTableViewCellViewModel.swift */; };
 		BD8F9B6E276EDDC6002BD084 /* EndlessScrollTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9B6D276EDDC6002BD084 /* EndlessScrollTableViewTests.swift */; };
 		BD9FF6FC276F733A002A4FA0 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = BD9FF6FB276F733A002A4FA0 /* SnapKit */; };
+		BD9FF72B276F7EBA002A4FA0 /* ActivityIndicatorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF72A276F7EBA002A4FA0 /* ActivityIndicatorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		BD8F9B5E276ECC2F002BD084 /* ScoreItemViewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreItemViewsTests.swift; sourceTree = "<group>"; };
 		BD8F9B63276ED179002BD084 /* EndlessScrollTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndlessScrollTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		BD8F9B6D276EDDC6002BD084 /* EndlessScrollTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndlessScrollTableViewTests.swift; sourceTree = "<group>"; };
+		BD9FF72A276F7EBA002A4FA0 /* ActivityIndicatorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorExtension.swift; sourceTree = "<group>"; };
 		EFC6CDD44B3EB5A63B79B3D2 /* Pods_MobileChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -125,6 +127,7 @@
 				BD8F9B14276E58B1002BD084 /* EndlessScrollTableView */,
 				BD8F9A49276D95DA002BD084 /* Resources */,
 				BD8F9A44276D9594002BD084 /* StringConstants */,
+				BD9FF729276F7E99002A4FA0 /* UIViewController+Extension */,
 				BD8F99B9276D8230002BD084 /* MobileChallengeUI.h */,
 				BD8F99BA276D8230002BD084 /* Info.plist */,
 			);
@@ -234,6 +237,14 @@
 				BD8F9B63276ED179002BD084 /* EndlessScrollTableViewCellViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BD9FF729276F7E99002A4FA0 /* UIViewController+Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BD9FF72A276F7EBA002A4FA0 /* ActivityIndicatorExtension.swift */,
+			);
+			path = "UIViewController+Extension";
 			sourceTree = "<group>";
 		};
 		CC8425834D247D8E423E22E7 /* Frameworks */ = {
@@ -449,6 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD9FF72B276F7EBA002A4FA0 /* ActivityIndicatorExtension.swift in Sources */,
 				BD8F9B64276ED179002BD084 /* EndlessScrollTableViewCellViewModel.swift in Sources */,
 				BD8F9B3F276EC2C8002BD084 /* UserProfileView.swift in Sources */,
 				BD8F9B18276E58DD002BD084 /* EndlessScrollTableViewDelegate.swift in Sources */,
