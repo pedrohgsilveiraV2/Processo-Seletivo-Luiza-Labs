@@ -20,4 +20,10 @@ struct RepositoryService: RepositoryServiceProtocol {
 
         client.request(requestBuilder: requestBuilder, responseType: RepositoyListResponse.self, completion: completion)
     }
+
+    func fetchPullRequest(credentials: PullRequestCredentials, _ completion: @escaping (Result<[PullRequestItemResponse], NetworkError>) -> Void) {
+        let requestBuilder = URLRequestBuilder(from: RepositoryRequest.fetchPullRequest(credentials: credentials))
+
+        client.request(requestBuilder: requestBuilder, responseType: [PullRequestItemResponse].self, completion: completion)
+    }
 }
