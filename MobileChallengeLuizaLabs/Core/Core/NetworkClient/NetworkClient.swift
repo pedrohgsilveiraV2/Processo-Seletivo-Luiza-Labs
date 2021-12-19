@@ -15,13 +15,13 @@ public struct NetworkClient: NetworkRequestable {
         self.service = service
     }
 
-    private func decode<T: Decodable>(decodableType: T.Type, data: Data) -> T? {
+    private func decode<T: Decodable>(decodableType: T.Type, data: Data, completion: @escaping (Result<T, NetworkError>) -> Void) {
         do {
-            let object = try JSONDecoder().decode(decodableType.self, from: data)
-            return object
+            let decodedData = try JSONDecoder().decode(decodableType.self, from: data)
+            completion(.success(decodedData))
         } catch(let error) {
-            debugPrint(error.localizedDescription)
-            return nil
+            let decodedError = NetworkError(statusCode: 0, type: .failedToDecode(decodeError: error.localizedDescription))
+            completion(.failure(decodedError))
         }
     }
 
@@ -32,15 +32,7 @@ public struct NetworkClient: NetworkRequestable {
 
         switch code {
         case .ok:
-            guard let decodedData = decode(decodableType: decodableType, data: data) else {
-                let error = NetworkError(statusCode: 0, type: .failedToDecode)
-
-                completion(.failure(error))
-                return
-            }
-
-            completion(.success(decodedData))
-            return
+            decode(decodableType: decodableType, data: data, completion: completion)
         default:
             let error = NetworkError(statusCode: code.rawValue)
 

@@ -35,7 +35,7 @@ enum NetworkErrorType {
     case notModified
     case validationFailed
     case serviceUnavailable
-    case failedToDecode
+    case failedToDecode(decodeError: String)
     case undefined
 
     typealias RawValue = StatusCode
@@ -66,8 +66,8 @@ extension NetworkErrorType {
             return L10n.validationFailedDescription
         case .serviceUnavailable:
             return L10n.serviceUnavailableDescription
-        case .failedToDecode:
-            return ""
+        case .failedToDecode(let decodeError):
+            return decodeError
         case .undefined:
             return L10n.undefinedDescription
         }

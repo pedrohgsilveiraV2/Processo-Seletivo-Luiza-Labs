@@ -15,14 +15,12 @@ final class GenericLoaderView: UIView {
         activityIndicator.hidesWhenStopped = true
         activityIndicator.startAnimating()
 
-
         return activityIndicator
     }()
 
     private var blurEffectView: UIVisualEffectView = {
         let blurEffect = UIBlurEffect(style: .light)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
-
         blurEffectView.alpha = 0.8
 
         return blurEffectView
