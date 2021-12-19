@@ -18,7 +18,7 @@ final class PullRequestListTableViewDelegate: NSObject, UITableViewDelegate {
     }
 
     enum Constants {
-        static let rowHeight: CGFloat = 120
+        static let rowHeight: CGFloat = 126
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
