@@ -16,14 +16,16 @@ final class RepositoryListViewController: UIViewController {
 
     private var state: RepositoryListState = .initialState
 
+    private var didFinishRequest: Bool = true
+
+    private var credentials: [PullRequestCredentials] = []
+
     private lazy var mainView: RepositoryListView = {
         let view = RepositoryListView()
         view.delegate = self
 
         return view
     }()
-
-    private var didFinishRequest: Bool = true
 
     // MARK: - Life Cycle
     init(provider: RepositoryListProviderProtocol = RepositoryListProvider()) {
@@ -82,6 +84,12 @@ extension RepositoryListViewController {
                     }
 
                     return EndlessScrollTableViewCellViewModel(repositoryName: $0.name, repositoryDescription: $0.description, forkScore: $0.forksCount, starScore: $0.stargazersCount, userName: $0.owner.ownerName, profileImage: UIImage())
+                }
+
+                viewModels.forEach {
+                    let credential = PullRequestCredentials(repoOwner: $0.userName, repoName: $0.repositoryName)
+
+                    self.credentials.append(credential)
                 }
 
                 self.stopLoading()
