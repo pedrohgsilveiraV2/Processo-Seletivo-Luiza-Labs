@@ -38,7 +38,7 @@ open class Coordinator: CoordinatorProtocol {
         handler(event)
     }
 
-    public func start(_ completion: (() -> Void)?) {
+    open func start(_ completion: (() -> Void)?) {
         guard let completion = completion else { return }
 
         completion()

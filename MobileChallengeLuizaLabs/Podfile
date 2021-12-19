@@ -60,3 +60,19 @@ target 'MobileChallengeUI' do
     tests_pods
   end
 end
+
+target 'Repository' do
+  use_frameworks!
+
+  project 'Repository/Repository.xcodeproj'
+
+  tools_pods
+
+  target 'RepositoryTests' do
+    inherit! :search_paths
+
+    project 'Repository/Repository.xcodeproj'
+    
+    tests_pods
+  end
+end

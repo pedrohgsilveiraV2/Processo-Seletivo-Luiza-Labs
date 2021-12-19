@@ -22,7 +22,7 @@ public struct NetworkClient: NetworkRequestable {
     private func validateResponse<T: Decodable>(by code: StatusCode,
                                                 with data: Data,
                                                 decodableType: T.Type,
-                                                completion: @escaping (Result<T?, NetworkError>) -> Void) {
+                                                completion: @escaping (Result<T, NetworkError>) -> Void) {
 
         switch code {
         case .ok:
@@ -45,7 +45,7 @@ public struct NetworkClient: NetworkRequestable {
 
     private func privateRequest<T: Decodable>(request: NSMutableURLRequest,
                                               decodableType: T.Type,
-                                              completion: @escaping (Result<T?, NetworkError>) -> Void) {
+                                              completion: @escaping (Result<T, NetworkError>) -> Void) {
 
         service.request(with: request as URLRequest) { data, response, error in
 
@@ -82,7 +82,7 @@ public struct NetworkClient: NetworkRequestable {
 
     public func request<T: Decodable>(requestBuilder: URLRequestBuilder,
                                responseType: T.Type,
-                               completion: @escaping (Result<T?, NetworkError>) -> Void) {
+                               completion: @escaping (Result<T, NetworkError>) -> Void) {
 
         guard let urlRequest = requestBuilder.createRequest() else {
             completion(.failure(NetworkError(statusCode: 0, type: .badURL)))

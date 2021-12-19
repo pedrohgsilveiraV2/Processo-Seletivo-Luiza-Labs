@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		BD8F978D276D4A1C002BD084 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F978C276D4A1C002BD084 /* AppDelegate.swift */; };
 		BD8F978F276D4A1C002BD084 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F978E276D4A1C002BD084 /* SceneDelegate.swift */; };
-		BD8F9791276D4A1C002BD084 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F9790276D4A1C002BD084 /* ViewController.swift */; };
 		BD8F9796276D4A1E002BD084 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8F9795276D4A1E002BD084 /* Assets.xcassets */; };
 		BD8F9799276D4A1E002BD084 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8F9797276D4A1E002BD084 /* LaunchScreen.storyboard */; };
 		BD8F9A51276D9619002BD084 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8F9A50276D9619002BD084 /* Core.framework */; };
 		BD8F9A52276D9619002BD084 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD8F9A50276D9619002BD084 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BD8F9A55276D961D002BD084 /* MobileChallengeUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8F9A54276D961D002BD084 /* MobileChallengeUI.framework */; };
 		BD8F9A56276D961D002BD084 /* MobileChallengeUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD8F9A54276D961D002BD084 /* MobileChallengeUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BD8F9BBE276F69BB002BD084 /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD8F9BBD276F69BB002BD084 /* Repository.framework */; };
+		BD8F9BBF276F69BB002BD084 /* Repository.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD8F9BBD276F69BB002BD084 /* Repository.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BD9FF73B276F8609002A4FA0 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9FF73A276F8609002A4FA0 /* MainCoordinator.swift */; };
 		FA6354EDA51B37A18DCFD247 /* Pods_MobileChallengeLuizaLabs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CED35532DD740AB321983AC /* Pods_MobileChallengeLuizaLabs.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,7 @@
 			files = (
 				BD8F9A56276D961D002BD084 /* MobileChallengeUI.framework in Embed Frameworks */,
 				BD8F9A52276D9619002BD084 /* Core.framework in Embed Frameworks */,
+				BD8F9BBF276F69BB002BD084 /* Repository.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,12 +43,13 @@
 		BD8F9789276D4A1C002BD084 /* MobileChallengeLuizaLabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileChallengeLuizaLabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8F978C276D4A1C002BD084 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD8F978E276D4A1C002BD084 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BD8F9790276D4A1C002BD084 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BD8F9795276D4A1E002BD084 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD8F9798276D4A1E002BD084 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD8F979A276D4A1E002BD084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD8F9A50276D9619002BD084 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD8F9A54276D961D002BD084 /* MobileChallengeUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MobileChallengeUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD8F9BBD276F69BB002BD084 /* Repository.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Repository.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD9FF73A276F8609002A4FA0 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		F042AFA7248668143969540A /* Pods-MobileChallengeLuizaLabs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileChallengeLuizaLabs.debug.xcconfig"; path = "Target Support Files/Pods-MobileChallengeLuizaLabs/Pods-MobileChallengeLuizaLabs.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD8F9BBE276F69BB002BD084 /* Repository.framework in Frameworks */,
 				FA6354EDA51B37A18DCFD247 /* Pods_MobileChallengeLuizaLabs.framework in Frameworks */,
 				BD8F9A55276D961D002BD084 /* MobileChallengeUI.framework in Frameworks */,
 				BD8F9A51276D9619002BD084 /* Core.framework in Frameworks */,
@@ -66,6 +71,7 @@
 		09AD04719D2AA3284008FBA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BD8F9BBD276F69BB002BD084 /* Repository.framework */,
 				BD8F9A54276D961D002BD084 /* MobileChallengeUI.framework */,
 				BD8F9A50276D9619002BD084 /* Core.framework */,
 				4CED35532DD740AB321983AC /* Pods_MobileChallengeLuizaLabs.framework */,
@@ -94,14 +100,22 @@
 		BD8F978B276D4A1C002BD084 /* MobileChallengeLuizaLabs */ = {
 			isa = PBXGroup;
 			children = (
+				BD9FF739276F85FD002A4FA0 /* Coordinator */,
 				BD8F978C276D4A1C002BD084 /* AppDelegate.swift */,
 				BD8F978E276D4A1C002BD084 /* SceneDelegate.swift */,
-				BD8F9790276D4A1C002BD084 /* ViewController.swift */,
 				BD8F9795276D4A1E002BD084 /* Assets.xcassets */,
 				BD8F9797276D4A1E002BD084 /* LaunchScreen.storyboard */,
 				BD8F979A276D4A1E002BD084 /* Info.plist */,
 			);
 			path = MobileChallengeLuizaLabs;
+			sourceTree = "<group>";
+		};
+		BD9FF739276F85FD002A4FA0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				BD9FF73A276F8609002A4FA0 /* MainCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		CABDBEC3E1D5AF66E90D8C4D /* Pods */ = {
@@ -213,8 +227,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD8F9791276D4A1C002BD084 /* ViewController.swift in Sources */,
 				BD8F978D276D4A1C002BD084 /* AppDelegate.swift in Sources */,
+				BD9FF73B276F8609002A4FA0 /* MainCoordinator.swift in Sources */,
 				BD8F978F276D4A1C002BD084 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

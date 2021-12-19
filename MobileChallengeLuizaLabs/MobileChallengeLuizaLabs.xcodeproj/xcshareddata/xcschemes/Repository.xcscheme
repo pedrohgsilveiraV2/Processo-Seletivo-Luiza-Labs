@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BD8F99B5276D8230002BD084"
-               BuildableName = "MobileChallengeUI.framework"
-               BlueprintName = "MobileChallengeUI"
-               ReferencedContainer = "container:MobileChallengeUI.xcodeproj">
+               BlueprintIdentifier = "BD8F9B88276F68B4002BD084"
+               BuildableName = "Repository.framework"
+               BlueprintName = "Repository"
+               ReferencedContainer = "container:Repository/Repository.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BD8F99B5276D8230002BD084"
-            BuildableName = "MobileChallengeUI.framework"
-            BlueprintName = "MobileChallengeUI"
-            ReferencedContainer = "container:MobileChallengeUI.xcodeproj">
+            BlueprintIdentifier = "BD8F9B88276F68B4002BD084"
+            BuildableName = "Repository.framework"
+            BlueprintName = "Repository"
+            ReferencedContainer = "container:Repository/Repository.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
@@ -43,10 +43,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BD8F99BE276D8230002BD084"
-               BuildableName = "MobileChallengeUITests.xctest"
-               BlueprintName = "MobileChallengeUITests"
-               ReferencedContainer = "container:MobileChallengeUI.xcodeproj">
+               BlueprintIdentifier = "BD8F9B91276F68B4002BD084"
+               BuildableName = "RepositoryTests.xctest"
+               BlueprintName = "RepositoryTests"
+               ReferencedContainer = "container:Repository/Repository.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,10 +71,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BD8F99B5276D8230002BD084"
-            BuildableName = "MobileChallengeUI.framework"
-            BlueprintName = "MobileChallengeUI"
-            ReferencedContainer = "container:MobileChallengeUI.xcodeproj">
+            BlueprintIdentifier = "BD8F9B88276F68B4002BD084"
+            BuildableName = "Repository.framework"
+            BlueprintName = "Repository"
+            ReferencedContainer = "container:Repository/Repository.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

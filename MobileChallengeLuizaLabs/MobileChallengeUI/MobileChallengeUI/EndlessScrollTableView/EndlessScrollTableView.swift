@@ -19,7 +19,7 @@ public final class EndlessScrollTableView: UITableView {
 
     private var snapshot = NSDiffableDataSourceSnapshot<Int, EndlessScrollTableViewCellViewModel>()
 
-    init(didSelectRowHandler: @escaping (IndexPath) -> Void,
+    public init(didSelectRowHandler: @escaping (IndexPath) -> Void,
          didEndScroll: @escaping () -> Void) {
         self.didSelectRowHandler = didSelectRowHandler
         self.didEndScroll = didEndScroll

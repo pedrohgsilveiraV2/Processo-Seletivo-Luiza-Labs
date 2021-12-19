@@ -1,0 +1,6 @@
+  output_dir: 'Repository/Resources/'
+  strings:
+    inputs: Repository/StringConstants/Repository.strings
+    outputs:
+      - templateName: structured-swift4
+        output: RepositoryStringConstants.swift

@@ -76,6 +76,7 @@ extension EndlessScrollTableViewCell: ViewCodable {
 
         repositoryDescriptionLabel.snp.makeConstraints { make in
             make.top.equalTo(repositoryNameLabel.snp.bottom).offset(4)
+            make.width.equalTo(contentView.snp.width).multipliedBy(0.72)
             make.leading.equalTo(contentView.snp.leading).offset(16)
         }
 
@@ -93,10 +94,9 @@ extension EndlessScrollTableViewCell: ViewCodable {
 
         profileView.snp.makeConstraints { make in
             make.top.equalTo(contentView.snp.top).offset(24)
-            make.leading.equalTo(repositoryDescriptionLabel.snp.trailing).offset(32)
+            make.leading.equalTo(repositoryDescriptionLabel.snp.trailing).offset(12)
             make.trailing.equalTo(contentView.snp.trailing).offset(-16)
             make.bottom.equalTo(contentView.snp.bottom).offset(-24)
-            make.width.greaterThanOrEqualTo(80)
         }
     }
 

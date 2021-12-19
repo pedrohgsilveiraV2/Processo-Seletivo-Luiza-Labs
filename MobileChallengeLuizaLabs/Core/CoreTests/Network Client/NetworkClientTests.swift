@@ -46,8 +46,8 @@ final class NetworkClientTests: QuickSpec {
                             return
                         }
 
-                        expect(dummy?.dummyString).to(equal("123"))
-                        expect(dummy?.dummyInt).to(equal(12))
+                        expect(dummy.dummyString).to(equal("123"))
+                        expect(dummy.dummyInt).to(equal(12))
                     }
                 }
             }
