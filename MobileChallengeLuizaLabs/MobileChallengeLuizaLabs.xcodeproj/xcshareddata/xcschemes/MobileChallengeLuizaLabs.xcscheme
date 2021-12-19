@@ -51,6 +51,13 @@
             BlueprintName = "MobileChallengeUI"
             ReferencedContainer = "container:MobileChallengeUI/MobileChallengeUI.xcodeproj">
          </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "BD8F9B88276F68B4002BD084"
+            BuildableName = "Repository.framework"
+            BlueprintName = "Repository"
+            ReferencedContainer = "container:Repository/Repository.xcodeproj">
+         </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
          <TestableReference
@@ -71,6 +78,16 @@
                BuildableName = "MobileChallengeUITests.xctest"
                BlueprintName = "MobileChallengeUITests"
                ReferencedContainer = "container:MobileChallengeUI/MobileChallengeUI.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BD8F9B91276F68B4002BD084"
+               BuildableName = "RepositoryTests.xctest"
+               BlueprintName = "RepositoryTests"
+               ReferencedContainer = "container:Repository/Repository.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

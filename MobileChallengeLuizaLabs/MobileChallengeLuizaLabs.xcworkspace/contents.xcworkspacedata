@@ -13,4 +13,7 @@
    <FileRef
       location = "group:MobileChallengeUI/MobileChallengeUI.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:Repository/Repository.xcodeproj">
+   </FileRef>
 </Workspace>
