@@ -175,6 +175,7 @@
 		BD8F9BF8276F6BF9002BD084 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				BD9FF74E276F99D3002A4FA0 /* PullRequestList */,
 				BD9FF70F276F78F7002A4FA0 /* RepositoryList */,
 			);
 			path = Screens;
@@ -289,6 +290,37 @@
 				BD9FF733276F8529002A4FA0 /* RepositoryCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		BD9FF74E276F99D3002A4FA0 /* PullRequestList */ = {
+			isa = PBXGroup;
+			children = (
+				BD9FF751276F99EA002A4FA0 /* Controller */,
+				BD9FF750276F99E5002A4FA0 /* Provider */,
+				BD9FF74F276F99DF002A4FA0 /* View */,
+			);
+			path = PullRequestList;
+			sourceTree = "<group>";
+		};
+		BD9FF74F276F99DF002A4FA0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BD9FF750276F99E5002A4FA0 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		BD9FF751276F99EA002A4FA0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

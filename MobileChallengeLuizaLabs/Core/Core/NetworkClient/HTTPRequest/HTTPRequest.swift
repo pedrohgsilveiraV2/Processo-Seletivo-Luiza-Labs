@@ -13,4 +13,5 @@ public protocol HTTPRequest {
     var headers: [String: String]? { get }
     var body: HTTPBody? { get }
     var queryParameters: [String: String]? { get }
+    var path: [String]? { get }
 }

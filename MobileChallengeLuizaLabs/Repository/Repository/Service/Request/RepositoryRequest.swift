@@ -20,7 +20,7 @@ extension RepositoryRequest {
     var urlComponents: URLComponents {
         switch self {
         case .fetchRepositories:
-            guard let components = URLComponents(string: Constants.baseURL + "/search/repositories") else {
+            guard let components = URLComponents(string: Constants.baseURL) else {
                 return URLComponents()
             }
             return components
@@ -54,4 +54,12 @@ extension RepositoryRequest {
             return ["q": "language: Swift", "sort": "stars", "page": "\(currentPage)"]
         }
     }
+
+    var path: [String]? {
+        switch self {
+        case .fetchRepositories:
+            return ["/search", "repositories"]
+        }
+    }
+
 }
