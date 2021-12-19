@@ -12,6 +12,8 @@ import Foundation
 internal enum L10n {
   /// Lista de Pull Requests
   internal static let pullRequestListViewControllerTitle = L10n.tr("Repository", "PULL_REQUEST_LIST_VIEW_CONTROLLER_TITLE")
+  /// Lista de Repositórios
+  internal static let repositoryListViewControllerTitle = L10n.tr("Repository", "REPOSITORY_LIST_VIEW_CONTROLLER_TITLE")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

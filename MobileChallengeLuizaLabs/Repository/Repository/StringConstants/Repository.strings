@@ -7,3 +7,4 @@
 
 // MARK: - Pull Request List ViewController
 "PULL_REQUEST_LIST_VIEW_CONTROLLER_TITLE" = "Lista de Pull Requests";
+"REPOSITORY_LIST_VIEW_CONTROLLER_TITLE" = "Lista de Repositórios";

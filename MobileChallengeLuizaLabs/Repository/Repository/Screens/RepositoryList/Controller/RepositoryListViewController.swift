@@ -48,6 +48,8 @@ final class RepositoryListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.title = L10n.repositoryListViewControllerTitle
+
         handleState()
     }
 }
