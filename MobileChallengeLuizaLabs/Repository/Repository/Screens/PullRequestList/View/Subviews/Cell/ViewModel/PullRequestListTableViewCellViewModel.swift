@@ -11,7 +11,7 @@ struct PullRequestListTableViewCellViewModel: Hashable {
 
     public var pullRequestTitle: String
 
-    public var pullRequestDescription: String
+    public var pullRequestDescription: String?
 
     public var userName: String
 

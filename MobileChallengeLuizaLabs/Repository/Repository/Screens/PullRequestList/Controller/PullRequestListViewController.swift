@@ -18,6 +18,8 @@ final class PullRequestListViewController: UIViewController {
 
     private let credentials: PullRequestCredentials
 
+    private var pullRequestsUrlPaths: [String] = []
+
     private lazy var mainView: PullRequestListView = {
         let view = PullRequestListView()
         view.delegate = self
@@ -72,10 +74,14 @@ extension PullRequestListViewController {
                     return PullRequestListTableViewCellViewModel(pullRequestTitle: $0.title, pullRequestDescription: $0.description, userName: $0.owner.ownerName, profileImage: UIImage())
                 }
 
+                pullRequests.forEach {
+                    self.pullRequestsUrlPaths.append($0.pullRequestPath)
+                }
 
                 self.stopLoading()
                 self.mainView.updatePullRequestContent(with: viewModels)
-            case .failure:
+            case .failure(let error):
+                debugPrint(error)
                 break
             }
         }
@@ -85,6 +91,10 @@ extension PullRequestListViewController {
 // MARK: - Repository List View Delegate Methods
 extension PullRequestListViewController: PullRequestListViewDelegate {
     func didSelectRow(at indexPath: IndexPath) {
-        return
+        let currentPath = pullRequestsUrlPaths[indexPath.row]
+
+        if let currentUrl = URL(string: currentPath) {
+            coordinator?.handle(RepositoryCoordinatorEvents.showToPullRequestPage(with: currentUrl))
+        }
     }
 }
