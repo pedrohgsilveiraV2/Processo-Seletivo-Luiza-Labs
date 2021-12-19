@@ -8,5 +8,6 @@
 import Core
 
 enum RepositoryCoordinatorEvents: CoordinatorEvent {
-    case goToPullRequestListViewController(with: PullRequestCredentials)
+    case goToPullRequestList(with: PullRequestCredentials)
+    case showToPullRequestPage(with: URL)
 }

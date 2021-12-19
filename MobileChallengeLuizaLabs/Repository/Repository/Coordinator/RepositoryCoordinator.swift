@@ -28,20 +28,31 @@ public final class RepositoryCoordinator: Coordinator {
         rootViewController.pushViewController(repositoryListViewController, animated: true)
     }
 
-    private func goToPullRequestListViewController(with credentials: PullRequestCredentials) {
+    private func goToPullRequestList(with credentials: PullRequestCredentials) {
         let pullRequestListViewController = PullRequestListViewController(credentials: credentials)
 
         pullRequestListViewController.coordinator = self
 
         rootViewController.pushViewController(pullRequestListViewController, animated: true)
     }
+
+    private func showToPullRequestPage(with url: URL) {
+        let pullRequestPageViewController = PullRequestPageViewController(pullRequestUrl: url)
+
+        rootViewController.modalPresentationStyle = .pageSheet
+        rootViewController.modalTransitionStyle = .crossDissolve
+
+        rootViewController.present(pullRequestPageViewController, animated: true, completion: nil)
+    }
 }
 
 private extension RepositoryCoordinator {
     func handle(_ event: RepositoryCoordinatorEvents) {
         switch event {
-        case .goToPullRequestListViewController(let credentials):
-            goToPullRequestListViewController(with: credentials)
+        case .goToPullRequestList(let credentials):
+            goToPullRequestList(with: credentials)
+        case .showToPullRequestPage(let url):
+            showToPullRequestPage(with: url)
         }
     }
 }

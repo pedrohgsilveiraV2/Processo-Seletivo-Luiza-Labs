@@ -26,7 +26,7 @@ struct PullRequestItemResponse: Codable {
 
     var owner: PullRequestOwner
 
-    var description: String
+    var description: String?
 
     enum CodingKeys: String, CodingKey {
         case pullRequestPath = "html_url"

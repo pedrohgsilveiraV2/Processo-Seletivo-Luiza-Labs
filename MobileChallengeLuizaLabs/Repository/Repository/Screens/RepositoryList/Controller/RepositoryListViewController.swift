@@ -110,7 +110,7 @@ extension RepositoryListViewController: RepositoryListViewDelegate {
     func didSelectRow(at indexPath: IndexPath) {
         let credential = credentials[indexPath.row]
 
-        coordinator?.handle(RepositoryCoordinatorEvents.goToPullRequestListViewController(with: credential))
+        coordinator?.handle(RepositoryCoordinatorEvents.goToPullRequestList(with: credential))
     }
 
     func didEndScroll() {
