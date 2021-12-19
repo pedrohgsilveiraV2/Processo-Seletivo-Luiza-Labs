@@ -4,3 +4,7 @@
 //
 //  Created by pedro.silveira on 18/12/21.
 //
+
+// MARK: - Score Item Type
+"FORK_SCORE_ITEM_DESCRIPTION" = "fork";
+"STAR_CORE_ITEM_DESCRIPTION" = "star";

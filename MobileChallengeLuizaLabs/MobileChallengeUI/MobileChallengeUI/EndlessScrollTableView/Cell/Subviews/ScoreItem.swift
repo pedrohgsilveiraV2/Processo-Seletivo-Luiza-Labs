@@ -9,12 +9,17 @@ import UIKit
 import Core
 import SnapKit
 
-enum ScoreItemType {
+enum ScoreItemType: String {
     case fork
     case star
 
     var value: String {
-        return String(describing: self)
+        switch self {
+        case .fork:
+            return L10n.forkScoreItemDescription
+        case .star:
+            return L10n.starCoreItemDescription
+        }
     }
 }
 
@@ -25,7 +30,7 @@ final class ScoreItemView: UIView {
     private lazy var scoreTypeLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 14)
-        label.textColor = .yellow
+        label.textColor = .black
         label.numberOfLines = 0
         label.text = type.value
 
