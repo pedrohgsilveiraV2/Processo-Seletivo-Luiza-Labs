@@ -15,7 +15,7 @@ struct RepositoryListProvider: RepositoryListProviderProtocol {
         self.service = service
     }
 
-    func fetchRepositories(currentPage: Int, _ completion: @escaping (Result<RepositoyListResponse, NetworkError>) -> Void) {
+    func fetchRepositories(currentPage: Int, _ completion: @escaping (Result<[RepositoyListResponse], NetworkError>) -> Void) {
         service.fetchRepositories(currentPage: currentPage, completion)
     }
 }
