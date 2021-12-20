@@ -10,6 +10,14 @@ Para navegação foi utilizado um modelo de Coordinator uni direcional(O coordin
 
 A estrutura de Networking foi dividida em três camadas. A de mais baixo nível, sendo um client que é quem se comunica com a framework de Networking(A utilizada foi o URLSession). Após o client temos um service, para cada módulo de feature, que é o responsável por definir qual a response e a request da chamada. Por fim temos o provider, para cada feature, que é o objeto responsável por deixar a requisição mais atraente para o objeto de lógica de negócio(ViewController), além de apenas expor as requisições necessárias para aquela feature.
 
+## Desenvolvimento de Interfaces
+
+Para a construção de interfaces, a framwork escolhida foi o UIKit com ViewCode. A opção por ViewCode se deu por:
+
+* Torna a injeção de dependências algo mais natural e straightforward;
+* Facilita o processo de manutenção e homogeneização da code base, do projeto;
+* Melhor para trabalhar em equipe (não tem storyboard merge hell).
+
 ## Dependências
 
 Foram utilizados dois gerenciadores de dependência para o projeto, sendo eles O [Swift Package Manager](https://github.com/apple/swift-package-manager) e o [Cocoapods](https://github.com/CocoaPods/CocoaPods)
@@ -29,13 +37,20 @@ O [Cocoapods](https://github.com/CocoaPods/CocoaPods) foi escolhido para ser uma
 * [Nimble](https://github.com/Quick/Nimble)
 * [Nimble Snapshots](https://github.com/ashfurrow/Nimble-Snapshots)
 
-## Desenvolvimento da Interface
+## Modularização
 
-Para a construção de interfaces, a framwork escolhida foi o UIKit com ViewCode. A opção por ViewCode se deu por:
+O tipo de modularização escolhida foi a de monorepo com XCFrameworks. Existem três tipos de módulos no app:
 
-* Torna a injeção de dependências algo mais natural e straightforward;
-* Facilita o processo de manutenção e homogeneização da code base, do projeto;
-* Melhor para trabalhar em equipe (não tem storyboard merge hell).
+* Main -> Pode depender de todos os módulos, mas nenhum pode depender dele
+* Tool -> Pode depender de outro módulo de tool, e qualquer módulo pode depender dele
+* Feature -> Pode depender de apenas módulos de tool, e apenas o Main pode depender dele
+
+Está divisão foi definida para evitarmos dependency hell!
+
+A escolha por monorepo se deu por:
+
+* Simplificar o Workflow por centralizar toda a CodeBase em um único repositório
+* Estar alinhado a tools, adotados por grandes apps, como Buck e Bazel, facilitando um futura possível migração
 
 ## Integração Contínua e Deploy continuo
 
